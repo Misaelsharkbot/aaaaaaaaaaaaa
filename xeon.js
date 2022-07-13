@@ -190,7 +190,7 @@ let buttons = [
 {buttonId: `wkwwk`, buttonText: {displayText: 'bienvenido🤑'}, type: 1}
 ]
 let buttonMessage = {
-document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
+document: fs.readFileSync('./media/theme/cheems.xlsx'),
 mimetype: docs,
 jpegThumbnail:XeonWlcm,
 mentions: [num],
@@ -234,7 +234,7 @@ let buttons = [
 {buttonId: `wkwkwk`, buttonText: {displayText: 'se fue un randow🧐'}, type: 1}
 ]
 let buttonMessage = {
-document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
+document: fs.readFileSync('./media/theme/cheems.xlsx'),
 mimetype: docs,
 jpegThumbnail:XeonLft,
 mentions: [num],
