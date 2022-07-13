@@ -8831,128 +8831,118 @@ XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key 
 	if (isBanChat) return reply(mess.banChat)
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 listMessage :{
-                    title: `Hi ${pushname}`,
-                    description: `Please Choose The Menu\n\n`,
+                    title: `Hola ${pushname}`,
+                    description: `bot nuevo el desarrollo\n\n`,
                     buttonText: "Menu",
                     footerText: `${global.botname}`,
                     listType: "SINGLE_SELECT",
                     sections: [{
-								"title": "Initial Features Of Bot 🦄",
+								"title": "propietario",
 								"rows": [
 									{
-										"title": "Other ☕",
-										"description": "Displays The List Of Other Features",
+										"title": "Owner",
+										"description": "muestra la lista que solo owner/propietario puede usar",
 										"rowId": `${prefix}othermenu`
 									}
 								]
 							},
 							{
-								"title": "Bot Features ❤️",
+								"title": "lista de menu️",
 								"rows": [
 									{
-										"title": "All Menu 🥀",
-										"description": "Displays The List Of All The Features!",
+										"title": "menu completo",
+										"description": "muestra el menu completo!",
 										"rowId": `${prefix}allmenu`
 									},
 									{
 										"title": "Owner Menu 💠",
-										"description": "Displays The List Of Owner Features",
+										"description": "muestra la lista de característica de propietario",
 										"rowId": `${prefix}ownermenu`
 										},
 									{
-										"title": "Group Menu ✨",
-										"description": "Displays The List Of Main Features",
+										"title": "Grupo Menu ✨",
+										"description": "muestra la lista de característica principales",
 										"rowId": `${prefix}groupmenu`
 										},
 										{
-										"title": "Maker Menu 🌈",
-										"description": "Displays The List Of Logo Making Features",
+										"title": "Maker Menu",
+										"description": "muestra la lista de funcione de creacion de logo",
 										"rowId": `${prefix}indomenu`
 									},
 									{
-										"title": "Sound Menu 🎵",
-										"description": "Displays The List Of Sound Features",
+										"title": "sonido Menu 🎵",
+										"description": "muestra la lista de funcione de sonido",
 										"rowId": `${prefix}soundmenu`
 									},
 									{
-										"title": "Download Menu ↘️",
-										"description": "Displays The List Of Download Features",
+										"title": "descarga Menu ↘️",
+										"description": "muestra la lista de descarga",
 										"rowId": `${prefix}downloadmenu`
 									},
 									{
 										"title": "Sticker Menu 🃏",
-										"description": "Displays The List Of Sticker Features",
+										"description": "muestra la característica de etiquetas",
 										"rowId": `${prefix}indomenu`
 									},
 									{
 										"title": "Search Menu 🔎",
-										"description": "Displays The List Of Searching Features",
+										"description": "muestra la lista de búsqueda",
 										"rowId": `${prefix}searchmenu`
 									},
 									{
-										"title": "Tool Menu ⚙️",
-										"description": "Displays The List Of Tool Features",
+										"title": "herramientas Menu ⚙️",
+										"description": "muestra la lista de característica de herramientas",
 										"rowId": `${prefix}toolmenu`
 									},
 									{
 										"title": "Random Image Menu 🌆",
-										"description": "Displays The List Of Random Image Features",
+										"description": "muestra característica randow",
 										"rowId": `${prefix}randomimagemenu`
 									},
 									{
-										"title": "Image Effect Menu 🖼️",
-										"description": "Displays The List Of Image Effect Features",
+										"title": "Image Efecto Menu 🖼️",
+										"description": "muestra la lista de efecto para imagen",
 										"rowId": `${prefix}imageeffectmenu`
 									},
 										{
 											"title": "Anime Menu 😘",
-										"description": "Displays The List Of Random Anime Features",
+										"description": "muestra la lista de anime",
 										"rowId": `${prefix}animemenu`
 										},
 										{
 											"title": "Emote Menu 😀",
-										"description": "Displays The List Of Emote Features",
+										"description": "muestra la lista de emojis",
 										"rowId": `${prefix}emotemenu`
 										},
 										{
 										"title": "Anime Sticker Menu ☺️",
-										"description": "Displays The List Of Anime Sticker Features",
+										"description": "muestra la lista de anime para sticker",
 										"rowId": `${prefix}animestickermenu`
 									     },
 									{
 										"title": "Nsfw Menu 🤓",
-										"description": "Displays The List Of Nsfe Features",
+										"description": "muestra el menu +18",
 										"rowId": `${prefix}nsfwmenu`
 									     },
 										{
 											"title": "Fun Menu 🕺",
-										"description": "Displays The List Of Fun Features",
+										"description": "muestra eo menu divertido",
 										"rowId": `${prefix}funmenu`
 										},
 										{
-										"title": "Game Menu 🎮",
-										"description": "Displays The List Of Game Features",
+										"title": "juegos Menu 🎮",
+										"description": "muestra la lista de juegos para diverti tu grupo",
 										"rowId": `${prefix}indomenu`
 									},
 										{
 											"title": "Convert Menu ⚒️",
-										"description": "Displays The List Of Convert Features",
+										"description": "lista de funcione de conversación",
 										"rowId": `${prefix}convertmenu`
 										},
 										{
 											"title": "Database Menu ♻️",
-										"description": "Displays The List Of Database Features",
+										"description": "muestra la funciones de database",
 										"rowId": `${prefix}databasemenu`
-										},
-										{
-										"title": "Indo Menu  🦜",
-										"description": "Displays The List Of Indo Features",
-										"rowId": `${prefix}indomenu`
-									},
-										{
-											"title": "Horoscope Menu 🕊️",
-										"description": "Displays The List Of Horoscope Features",
-										"rowId": `${prefix}indohoroscopemenu`
 										}
 								]
 							},
@@ -8967,11 +8957,11 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 								]
 							},
 							{
-								"title": "Credit ©️",
+								"title": "grupos️",
 								"rows": [
 									{
-										"title": "Thanks To ❤️",
-										"description": "Displays The List Of Credit Of The Bot !!",
+										"title": "grupos️",
+										"description": "lista de grupos ofc del bot !!",
 										"rowId": `${prefix}tqtt`
 									}
 								]
