@@ -65,8 +65,8 @@ global.owner = ['56977774748' , '51935116539']
 global.ownertag = '447441419651' //ur tag number
 global.botname = 'pruebabot' //ur bot name
 global.linkz = "https://youtu.be/WiIqCdiDjFo" //your theme url which will be displayed on whatsapp
-global.websitex = "https://youtu.be/WiIqCdiDjFo" //ur website to be displayed
-global.botscript = 'https://github.com/DGXeon/CheemsBot-MD4' //script link
+global.websitex = "https://youtu.be" //ur website to be displayed
+global.botscript = 'https://github.com' //script link
 global.reactmoji = "😘" //ur menu react emoji
 global.themeemoji = "🦄" //ur theme emoji
 global.packname = "Cheems Bot Stickers\n\n\n\n\n\n\n\n\n\n\n🦄🦄🦄 " //ur sticker watermark packname
@@ -106,14 +106,14 @@ global.prefa = ['','!','.','🐦','🐤','🗿']
 global.sp = '⭔'
 global.mess = {
     success: 'Done ✓',
-    admin: 'This Feature Is Only For Admin!',
-    botAdmin: 'Bot Must Be Admin First!',
-    owner: 'This Feature Is Only For Owner!',
-    group: 'Feature Used Only For Groups!',
-    private: 'Features Used Only For Private Chat!',
-    bot: 'This Feature Is Only For Bot',
-    wait: 'In process...',
-    linkm: 'Where is the link?',
+    admin: 'tiene que ser Admin oara usa este comando!',
+    botAdmin: 'primero el bot (yo) tiene que ser admin!',
+    owner: 'solo para propietario/Owner de bot!',
+    group: 'este comando solo para grupo!',
+    private: 'este comando solo para chta privado del bot!',
+    bot: 'este mensaje no fue enviado por el bot',
+    wait: 'espere unos minutos...',
+    linkm: 'y link?',
     error: 'Error!!',
     endLimit: 'Your Daily Limit Has Expired, The Limit Will Be Reset Every 12 Hours',
     ban: 'You have been banned by the owner, if you want to be unbanned, chat owner.',
