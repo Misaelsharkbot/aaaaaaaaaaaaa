@@ -190,10 +190,10 @@ const {
  let _darahOrg = JSON.parse(fs.readFileSync('./storage/user/darah.json'))
 
 //Database omther\\
-let xeonysticker = JSON.parse(fs.readFileSync('./XeonMedia/theme/Media-Store-Karne-Ke-Liye/sticker.json'));
-let xeonyaudio = JSON.parse(fs.readFileSync('./XeonMedia/theme/Media-Store-Karne-Ke-Liye/audio.json'));
-let xeonyimage = JSON.parse(fs.readFileSync('./XeonMedia/theme/Media-Store-Karne-Ke-Liye/image.json'));
-let xeonyvideo = JSON.parse(fs.readFileSync('./XeonMedia/theme/Media-Store-Karne-Ke-Liye/video.json'));
+let xeonysticker = JSON.parse(fs.readFileSync('./media/theme/Media-Store-Karne-Ke-Liye/sticker.json'));
+let xeonyaudio = JSON.parse(fs.readFileSync('./media/theme/Media-Store-Karne-Ke-Liye/audio.json'));
+let xeonyimage = JSON.parse(fs.readFileSync('./media/theme/Media-Store-Karne-Ke-Liye/image.json'));
+let xeonyvideo = JSON.parse(fs.readFileSync('./media/theme/Media-Store-Karne-Ke-Liye/video.json'));
 let autosticker = JSON.parse(fs.readFileSync('./database/autosticker.json'));
 const _autostick = JSON.parse(fs.readFileSync('./database/autostickpc.json'));
 let banUser = JSON.parse(fs.readFileSync('./database/banUser.json'));
@@ -8764,7 +8764,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("XeonMedia/theme/cheemspic.jpg"),
+thumbnail: fs.readFileSync("media/theme/cheemspic.jpg"),
 mediaType:1,
 mediaUrl: 'https://telegra.ph/file/8737b098fd5702daeb7e0.jpg',
 sourceUrl: "https://telegra.ph/file/8737b098fd5702daeb7e0.jpg"
@@ -8822,7 +8822,7 @@ XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key 
             { quickReplyButton: { displayText: `List Menu 🍢`, id: 'command'} },
             { quickReplyButton: { displayText: `Owner 🤣`, id: 'owner'} }
         	]
-        	XeonBotInc.sendMessage(m.chat, { caption: menulist, document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'), mimetype: `${docs}`, fileName: `${ownername}`, templateButtons: buttonmenu, footer: `${botname}`, mentionedJid: [m.sender] })
+        	XeonBotInc.sendMessage(m.chat, { caption: menulist, document: fs.readFileSync('./media/theme/cheems.xlsx'), mimetype: `${docs}`, fileName: `${ownername}`, templateButtons: buttonmenu, footer: `${botname}`, mentionedJid: [m.sender] })
                         }
                      }
             break
@@ -10645,7 +10645,7 @@ if (listTag.includes(partiNum)) {
 if (antitags === false) return
 if (!m.isGroup) return
 if (m.key.fromMe) return
-sendNye = fs.readFileSync('./XeonMedia/theme/yourtag.webp')
+sendNye = fs.readFileSync('./media/theme/yourtag.webp')
 XeonBotInc.sendReadReceipt(m.chat, m.sender, [m.key.id])
 XeonBotInc.sendMessage(from, {sticker:sendNye, contextInfo:{forwardingScore: 800, isForwarded: true}}, {quoted:m})
 }
@@ -10654,7 +10654,7 @@ if (budy.includes(`${global.ownertag}`)) {
 if (antitags === false) return
 if (!m.isGroup) return
 if (m.key.fromMe) return
-sendNye = fs.readFileSync('./XeonMedia/theme/yourtag.webp')
+sendNye = fs.readFileSync('./media/theme/yourtag.webp')
 XeonBotInc.sendReadReceipt(m.chat, m.sender, [m.key.id])
 XeonBotInc.sendMessage(from, {sticker:sendNye, contextInfo:{forwardingScore: 800, isForwarded: true}}, {quoted:m})
 }
