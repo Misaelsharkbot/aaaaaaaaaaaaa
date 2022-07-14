@@ -8835,110 +8835,110 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
                     footerText: `${global.botname}`,
                     listType: "SINGLE_SELECT",
                     sections: [{
-								"title": "propietario",
+								"title": "──❖ 𝙸𝙼𝙵𝙾𝚁𝙼𝙰𝙲𝙸𝙾𝙽 ❖──",
 								"rows": [
 									{
-										"title": "Owner",
-										"description": "muestra la lista que solo owner/propietario puede usar",
+										"title": "𝙾𝚆𝙽𝙴𝚁",
+										"description": "Muestra comandos para el owner/propietario",
 										"rowId": `${prefix}othermenu`
 									}
 								]
 							},
 							{
-								"title": "lista de menu️",
+								"title": "𝐋𝐈𝐒𝐓𝐀 𝐃𝐄 𝐌𝐄𝐍𝐔𝐒",
 								"rows": [
 									{
-										"title": "menu completo",
+										"title": "𝙼𝙴𝙽𝚄 𝙲𝙾𝙼𝙿𝙻𝙴𝚃𝙾",
 										"description": "muestra el menu completo!",
 										"rowId": `${prefix}allmenu`
 									},
 									{
-										"title": "Owner Menu 💠",
+										"title": "𝙾𝚆𝙽𝙴𝚁 𝙼𝙴𝙽𝚄 💠",
 										"description": "muestra la lista de característica de propietario",
 										"rowId": `${prefix}ownermenu`
 										},
 									{
-										"title": "Grupo Menu ✨",
+										"title": "𝙼𝙴𝙽𝚄 𝙶𝚁𝚄𝙿𝙾 ✨",
 										"description": "muestra la lista de característica principales",
 										"rowId": `${prefix}groupmenu`
 										},
 										{
-										"title": "Maker Menu",
+										"title": "𝙼𝙴𝙽𝚄 𝙼𝙰𝙺𝙴𝚁 📄",
 										"description": "muestra la lista de funcione de creacion de logo",
 										"rowId": `${prefix}indomenu`
 									},
 									{
-										"title": "sonido Menu 🎵",
+										"title": "𝙼𝙴𝙽𝚄 𝙰𝚄𝙳𝙸𝙾𝚂 🎵",
 										"description": "muestra la lista de funcione de sonido",
 										"rowId": `${prefix}soundmenu`
 									},
 									{
-										"title": "descarga Menu ↘️",
+										"title": "𝙼𝙴𝙽𝚄 𝙳𝙴𝚂𝙲𝙰𝚁𝙶𝙰𝚂 ↘️",
 										"description": "muestra la lista de descarga",
 										"rowId": `${prefix}downloadmenu`
 									},
 									{
-										"title": "Sticker Menu 🃏",
+										"title": "𝙼𝙴𝙽𝚄 𝚂𝚃𝙸𝙲𝙺𝙴𝚁 🃏",
 										"description": "muestra la característica de etiquetas",
 										"rowId": `${prefix}indomenu`
 									},
 									{
-										"title": "Search Menu 🔎",
+										"title": "𝙼𝙴𝙽𝚄 𝙱𝚄𝚂𝚀𝚄𝙴𝙳𝙰 🔎",
 										"description": "muestra la lista de búsqueda",
 										"rowId": `${prefix}searchmenu`
 									},
 									{
-										"title": "herramientas Menu ⚙️",
+										"title": "𝙼𝙴𝙽𝚄 𝚃𝙾𝙾𝙻𝚂 ⚙️",
 										"description": "muestra la lista de característica de herramientas",
 										"rowId": `${prefix}toolmenu`
 									},
 									{
-										"title": "Random Image Menu 🌆",
+										"title": "𝙼𝙴𝙽𝚄 𝙸𝙼𝙰𝙶𝙴𝙽𝙴𝚂 🌆",
 										"description": "muestra característica randow",
 										"rowId": `${prefix}randomimagemenu`
 									},
 									{
-										"title": "Image Efecto Menu 🖼️",
+										"title": "𝙼𝙴𝙽𝚄 𝙴𝙵𝙴𝙲𝚃𝙾𝚂 🖼️",
 										"description": "muestra la lista de efecto para imagen",
 										"rowId": `${prefix}imageeffectmenu`
 									},
 										{
-											"title": "Anime Menu 😘",
+											"title": "𝙼𝙴𝙽𝚄 𝙰𝙽𝙸𝙼𝙴 😘",
 										"description": "muestra la lista de anime",
 										"rowId": `${prefix}animemenu`
 										},
 										{
-											"title": "Emote Menu 😀",
+											"title": "𝙼𝙴𝙽𝚄 𝙴𝙼𝙾𝙹𝙸 😀",
 										"description": "muestra la lista de emojis",
 										"rowId": `${prefix}emotemenu`
 										},
 										{
-										"title": "Anime Sticker Menu ☺️",
+										"title": "𝙼𝙴𝙽𝚄 𝚂𝚃𝙸𝙲𝙺𝙴𝚁 𝙰𝙽𝙸𝙼𝙴 ☺️",
 										"description": "muestra la lista de anime para sticker",
 										"rowId": `${prefix}animestickermenu`
 									     },
 									{
-										"title": "Nsfw Menu 🤓",
+										"title": "𝙼𝙴𝙽𝚄 𝙽𝚂𝙵𝚆 🤓",
 										"description": "muestra el menu +18",
 										"rowId": `${prefix}nsfwmenu`
 									     },
 										{
-											"title": "Fun Menu 🕺",
+											"title": "𝙼𝙴𝙽𝚄 𝙳𝙸𝚅𝙴𝚁𝚃𝙸𝙳𝙾 🕺",
 										"description": "muestra eo menu divertido",
 										"rowId": `${prefix}funmenu`
 										},
 										{
-										"title": "juegos Menu 🎮",
+										"title": "𝙼𝙴𝙽𝚄 𝙹𝚄𝙴𝙶𝙾𝚂 🎮",
 										"description": "muestra la lista de juegos para diverti tu grupo",
 										"rowId": `${prefix}indomenu`
 									},
 										{
-											"title": "Convert Menu ⚒️",
+											"title": "𝙼𝙴𝙽𝚄 𝙲𝙾𝙽𝚅𝙴𝚁𝚂𝙸𝙾𝙽 ⚒️",
 										"description": "lista de funcione de conversación",
 										"rowId": `${prefix}convertmenu`
 										},
 										{
-											"title": "Database Menu ♻️",
+											"title": "𝙼𝙴𝙽𝚄 𝙱𝙰𝚂𝙴 𝙳𝙴 𝙳𝙰𝚃𝙾𝚂 ♻️",
 										"description": "muestra la funciones de database",
 										"rowId": `${prefix}databasemenu`
 										}
@@ -8974,7 +8974,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 case 'allmenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
-var unicorn = await getBuffer(picak+'All Menu')
+var unicorn = await getBuffer(picak+'Menu Completo')
 await XeonBotInc.send5ButImg(from, `╔═══════✪「 OWNER 」	
 ╠ ${prefix}self
 ╠ ${prefix}public
