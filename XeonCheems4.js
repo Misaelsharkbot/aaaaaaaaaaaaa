@@ -937,10 +937,10 @@ ${Array.from(room.jawaban, (jawaban, index) => {
 	    }
 	    if (!isSurrender && 1 > (ok = room.game.turn(m.sender === room.game.playerO, parseInt(m.text) - 1))) {
 	    reply({
-	    '-3': 'Game Has Ended',
-	    '-2': 'Invalid',
-	    '-1': 'Invalid Position',
-	    0: 'Invalid Position',
+	    '-3': 'El juego ha terminado',
+	    '-2': 'Invalido',
+	    '-1': 'Posición inválida',
+	    0: 'Posición inválida',
 	    }[ok])
 	    return !0
 	    }
@@ -1100,15 +1100,15 @@ const latensie = speed() - timestampe
 │└────────────┈ ⳹
 │
 └─「 𝙄𝙉𝙁𝙊𝘽𝙊𝙏 」       
-│velocidad : ${latensie.toFixed(4)} miliseconds
-│tiempo activo : ${runtime(process.uptime())}
-│nombre de bot : ${global.botname}
-│nombre de owner : ${global.ownername}
-│numero de owner. : ${global.owner}
-│𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : ${os.platform()}
-│𝗧𝗼𝘁𝗮𝗹 usuario : ${Object.keys(global.db.data.users).length}
-│𝗧𝗼𝘁𝗮𝗹 𝗛𝗶𝘁 : ${jumlahcmd}
-│𝗧𝗼𝘁𝗮𝗹 𝗛𝗶𝘁 𝗧𝗼𝗱𝗮𝘆 : ${jumlahharian}
+│ *𝚅𝙴𝙻𝙾𝙲𝙸𝙳𝙰𝙳 :* ${latensie.toFixed(4)} miliseconds
+│ *𝚃𝙸𝙴𝙼𝙿𝙾 𝙰𝙲𝚃𝙸𝚅𝙾 :* ${runtime(process.uptime())}
+│ *𝙽𝙾𝙼𝙱𝚁𝙴 𝙳𝙴𝙻 𝙱𝙾𝚃 :* ${global.botname}
+│ *𝙽𝙾𝙼𝙱𝚁𝙴 𝙳𝙴𝙻 𝙲𝚁𝙴𝙰𝙳𝙾𝚁 :* ${global.ownername}
+│ *𝙽𝚄𝙼𝙴𝚁𝙾 𝙳𝙴𝙻 𝙲𝚁𝙴𝙰𝙳𝙾𝚁*. : ${global.owner}
+│ *𝙿𝙻𝙰𝚃𝙰𝙵𝙾𝚁𝙼𝙰 :* ${os.platform()}
+│ *𝚃𝙾𝚃𝙰𝙻 𝚄𝚂𝚄𝙰𝚁𝙸𝙾𝚂 :* ${Object.keys(global.db.data.users).length}
+│ *𝚃𝙾𝚃𝙰𝙻 𝙷𝙸𝚃 :* ${jumlahcmd}
+│ *𝚃𝙾𝚃𝙰𝙻 𝙷𝙸𝚃 𝙷𝙾𝚈 :* ${jumlahharian}
 └┬────────────┈ ⳹
    │✑  que tenga lindo dia, tarde, noche 😊
    └─────────────┈ ⳹`
