@@ -19,7 +19,9 @@ Bot nuevo el desarrollo
 
 ## ```Contacto```
 <p align="center">
-<a href="https://wa.me/"><img src="https://img.shields.io/badge/Contact Xeon-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="https://wa.me/56977774748"><img src="https://img.shields.io/badge/Contact Xeon-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="https://wa.me/51935116539"><img src="https://img.shields.io/badge/Contact Xeon-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="https://wa.me/34623442554"><img src="https://img.shields.io/badge/Contact Xeon-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 <a href="https://chat.whatsapp.com/Byyrc8RJnUkJw6vvUgsbDF"><img src="https://img.shields.io/badge/Join Official GC-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 <a href="https://youtube.com/channel/UCvAo9TZ0Pw9vrJ_0WYRyO3A"><img src="https://img.shields.io/badge/Subscribe Xeon-ff0000?style=for-the-badge&logo=youtube&logoColor=ff000000&link=https://www.youtube.com/c/BOTINDO" /><br>
 </p>
