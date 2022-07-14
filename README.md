@@ -5,11 +5,11 @@ Bot nuevo el desarrollo
 
 ## ```Contacto```
 
-<a href="https://wa.me/56977774748"><img src="https://img.shields.io/badge/Contacto-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="https://wa.me/56977774748"><img src="https://img.shields.io/badge/Contacto creador-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 
-<a href="https://wa.me/51935116539"><img src="https://img.shields.io/badge/Contacto-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="https://wa.me/51935116539"><img src="https://img.shields.io/badge/Contacto desarrollo-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 
-<a href="https://wa.me/34623442554"><img src="https://img.shields.io/badge/Contacto-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="https://wa.me/34623442554"><img src="https://img.shields.io/badge/Contacto desarrollo-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 
 <a href="https://chat.whatsapp.com/Byyrc8RJnUkJw6vvUgsbDF"><img src="https://img.shields.io/badge/Join Official GC-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 
