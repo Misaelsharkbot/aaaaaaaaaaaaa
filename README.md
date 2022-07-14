@@ -26,9 +26,7 @@ Bot nuevo el desarrollo
 
 ## ```grupos```
 
-- [`1st GC`](https://chat.whatsapp.com/HYj9wu5Jrv6CROxyeQbHoS)
-- [`2nd GC`](https://chat.whatsapp.com/LS1Xx3fSqg7FpSYSjKWhL5)
-- [`3rd GC`](https://chat.whatsapp.com/EcycNbJFCVT5ZsG9xIGkqd)
+- [`1st GC`](https://chat.whatsapp.com/Byyrc8RJnUkJw6vvUgsbDF)
 
 ## clona el reposito aqui 👇
 
