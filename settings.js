@@ -38,11 +38,23 @@ global.doc5 = 'application/pdf'
 global.doc6 = 'application/vnd.android.package-archive'
 
 //owmner v card
-global.vcardowner = ['56977774748' , '51935116539'] //ur owner number
+global.vcardowner = ['56977774748'] //ur owner number
 global.ownername = "creador" //ur owner name
 global.ytname = "YT: loli" //ur yt chanel name
 global.socialm = "GitHub: " //ur github or insta name
 global.location = "argentina" //ur location
+//__________________
+global.vcardowner1 = ['51935116539'] //ur owner number
+global.ownername1 = "desarrollo" //ur owner name
+global.ytname1 = "YT: loli" //ur yt chanel name
+global.socialm1 = "GitHub: " //ur github or insta name
+global.location1 = "argentina" //ur location
+//__________________
+global.vcardowner2 = ['34623442554'] //ur owner number
+global.ownername2 = "desarrollo" //ur owner name
+global.ytname2 = "YT: loli" //ur yt chanel name
+global.socialm2 = "GitHub: " //ur github or insta name
+global.location2 = "argentina" //ur location
 
 //bot bomdy 
 global.owner = ['56977774748' , '51935116539']
@@ -51,10 +63,10 @@ global.botname = 'pruebabot' //ur bot name
 global.linkz = "https://youtu.be/WiIqCdiDjFo" //your theme url which will be displayed on whatsapp
 global.websitex = "https://youtu.be" //ur website to be displayed
 global.botscript = 'https://github.com' //script link
-global.reactmoji = "😘" //ur menu react emoji
+global.reactmoji = "😎" //ur menu react emoji
 global.themeemoji = "💎" //ur theme emoji
-global.packname = "Cheems Bot Stickers\n\n\n\n\n\n\n\n\n\n\n🦄🦄🦄 " //ur sticker watermark packname
-global.author = "🦄Dream Guy Xeon" //ur sticker watermark author
+global.packname = "toma tu sticker " //ur sticker watermark packname
+global.author = "Superbot-MD" //ur sticker watermark author
 
 //Bot theme media
 global.thum = fs.readFileSync("./media/theme/cheemspic.jpg") //ur thumb pic
