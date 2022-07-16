@@ -19,7 +19,7 @@
 <a href="https://chat.whatsapp.com/Byyrc8RJnUkJw6vvUgsbDF"><img src="https://img.shields.io/badge/Join Official GC-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 
 [![blog](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)
-](https://youtube.com/channel/UC9b3UIVnVb5eQt7)  <img src="https://github.com/siegrin/siegrin/blob/main/Assets/powerup.gif" height="29px">
+](https://youtube.com/channel/UC9b3UIVnVb5eQt7_Y-Qz-3A)  <img src="https://github.com/siegrin/siegrin/blob/main/Assets/powerup.gif" height="29px">
 
 ## ```grupos```
 
