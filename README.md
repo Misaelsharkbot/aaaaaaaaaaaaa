@@ -59,7 +59,7 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 ## `Clone Repo & Installation dependencies`
 ```bash
 git clone https://github.com/DGXeon/CheemsBot-MD4.git
-cd CheemsBot-MD4
+cd pruebabot
 
 npm start
 ```
@@ -76,7 +76,7 @@ pkg install ffmpeg -y
 pkg install wget
 pkg install imagemagick -y
 git clone https://github.com/DGXeon/CheemsBot-MD4
-cd CheemsBot-MD
+cd pruebabot
 npm start
 ```
 ## `For VPS`
@@ -88,7 +88,7 @@ apt apt install libwebp
 apt apt install imagrmagick
 apt install bash
 git clone https://github.com/DGXeon/CheemsBot-MD4
-cd CheemsBot-MD4
+cd pruebabot 
 npm start
 ```
 ## `For 24/7 Activation (Termux)`
