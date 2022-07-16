@@ -1834,7 +1834,7 @@ if (isBanChat) return reply(mess.banChat)
             let orang = member[Math.floor(Math.random() * member.length)]
             let jodoh = member[Math.floor(Math.random() * member.length)]
             let jawab = `@${orang.split('@')[0]} ❤️ @${jodoh.split('@')[0]}
-Cieeee, What's Going On❤️💖👀`
+hay, aca ya hay pareja❤️💖👀`
             let menst = [orang, jodoh]
             let buttons = [
                         { buttonId: '❤️', buttonText: { displayText: '❤️' }, type: 1 }
@@ -1845,7 +1845,7 @@ Cieeee, What's Going On❤️💖👀`
             case 'is':
             if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
-				if (!text) return replay(`Use Text, Example : ${prefix + command} he married `)
+				if (!text) return replay(`elegia un texto?, Ejemplo : ${prefix + command} he married `)
 					const apa = [`Yes`, `No`, `It Could Be`, `Thats right`]
 					const kah = apa[Math.floor(Math.random() * apa.length)]
 XeonBotInc.sendMessage(from, { text: `Question : Is ${q}\nAnswer : ${kah}` }, { quoted: m })
@@ -2243,8 +2243,8 @@ if (isBanChat) return reply(mess.banChat)
             	if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
                 if (!isCreator) return replay(`${mess.owner}`)
-                if (!text) return replay(`Enter The Group Link!`)
-                if (!isUrl(args[0]) && !args[0].includes('whatsapp.com')) return replay(`Invalid Link!`)
+                if (!text) return replay(`ingrese al grupo correctamente ✅!`)
+                if (!isUrl(args[0]) && !args[0].includes('whatsapp.com')) return replay(`Invalido Link!`)
                 reply(mess.wait)
                 let result = args[0].split('https://chat.whatsapp.com/')[1]
                 await XeonBotInc.groupAcceptInvite(result).then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
@@ -7936,18 +7936,18 @@ break
 	    case 'tiktok':{
   	if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
-  if (!q) return reply('Where is the link?')
+  if (!q) return reply('y el link?')
   reply(mess.wait)
-  if (!q.includes('tiktok')) return reply(`That's not a tiktok link!`)
+  if (!q.includes('tiktok')) return reply(`eso no es un enlace de tiktok!`)
    const musim_rambutan = await XeonBotIncTiktok(`${q}`).catch(e => {
  reply(mess.error) 
 } )
    console.log(musim_rambutan)
    const xeontiktokop = musim_rambutan.result.watermark
-texttk = `Wanna download no watermark or audio?
-_Please choose the button below_`
+texttk = `quiere descarga sin marca de agua o audio?
+_por favor eliga el boton de abajo_`
 let buttons = [
-{buttonId: `ttnowm ${q}`, buttonText: {displayText: 'No Watermark ❌'}, type: 1},
+{buttonId: `ttnowm ${q}`, buttonText: {displayText: 'sin marca de agua ❌'}, type: 1},
 {buttonId: `ttaud ${q}`, buttonText: {displayText: 'Audio 🎶'}, type: 1}
 ]
 let buttonMessage = {
@@ -7971,15 +7971,15 @@ break
   case 'tiktoknowm': case 'ttnowm':{
   	if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
-  if (!q) return reply('Where is the link?')
+  if (!q) return reply('y el link?')
   reply(mess.wait)
-  if (!q.includes('tiktok')) return reply(`That's not a tiktok link!`)
+  if (!q.includes('tiktok')) return reply(`eso no es un enlace de tiktok!`)
    const musim_rambutan = await XeonBotIncTiktok(`${q}`).catch(e => {
  reply(mess.error) 
 } )
    console.log(musim_rambutan)
    const xeonytiktoknowm = musim_rambutan.result.nowatermark
-    XeonBotInc.sendMessage(from, { video: { url: xeonytiktoknowm }, caption: "Here you go!" }, { quoted: m })
+    XeonBotInc.sendMessage(from, { video: { url: xeonytiktoknowm }, caption: "aqui tiene🔰!" }, { quoted: m })
    }
   break
   case 'tiktokaudio':
@@ -7987,8 +7987,8 @@ case 'tiktokmusic':
 case 'ttaud':{
 	if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
-  if (!q) return reply('Where is the audio?')
-  if (!q.includes('tiktok')) return reply(`That's not a tiktok link!`)
+  if (!q) return reply('y el link?')
+  if (!q.includes('tiktok')) return reply(`ese no es un enlace de tiktok!`)
    const musim_rambutan = await XeonBotIncTiktok(`${q}`).catch(e => {
  reply(mess.error) 
 } )
@@ -8000,28 +8000,27 @@ case 'ttaud':{
 	case 'music': case 'play': case 'song': case 'ytplay': {
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
+if (!q) return reply('que esta buscado?')
 let yts = require("yt-search")
 let search = await yts(text)
 let anu = search.videos[Math.floor(Math.random() * search.videos.length)]
 let ytvc = await hx.youtube(anu.url)
 let buttons = [
-{buttonId: `ytvd ${ytvc.link}`, buttonText: {displayText: '► Video'}, type: 1},
-{buttonId: `ytad ${ytvc.mp3}`, buttonText: {displayText: '♫ Audio'}, type: 1}
+{buttonId: `ytvd ${ytvc.link}`, buttonText: {displayText: 'Video'}, type: 1},
+{buttonId: `ytad ${ytvc.mp3}`, buttonText: {displayText: 'Audio'}, type: 1}
 ]
 let buttonMessage = {
 image: { url: anu.thumbnail },
 caption: `*| YOUTUBE PLAY |*
 
 ${global.themeemoji} Titulo : ${anu.title}
-${global.themeemoji} Ext : Search
-${global.themeemoji} ID : ${anu.videoId}
 ${global.themeemoji} Duración : ${anu.timestamp}
-${global.themeemoji} Viewers : ${anu.views}
-${global.themeemoji} Uploaded : ${anu.ago}
+${global.themeemoji} Vistas : ${anu.views}
+${global.themeemoji} subidos : ${anu.ago}
 ${global.themeemoji} Autor : ${anu.author.name}
 ${global.themeemoji} Canal : ${anu.author.url}
 ${global.themeemoji} Descripción : ${anu.description}
-${global.themeemoji} Url : ${anu.url}`,
+${global.themeemoji} URL : ${anu.url}`,
 footer: `${global.botname}`,
 buttons: buttons,
 headerType: 4,
@@ -8043,13 +8042,13 @@ if (isBanChat) return reply(mess.banChat)
 if (!args[0]) return reply(mess.linkm)
 try {
 hx.youtube(args[0]).then(async(res) => {
-textyt = `*| YOUTUBE DOWNLOADER |*
+textyt = `*| YOUTUBE DESCARGA |*
 
-${global.themeemoji} Title : ${res.title}
-${global.themeemoji} Size : ${res.size}
-${global.themeemoji} Quality : ${res.quality}
+${global.themeemoji} Titulo : ${res.title}
+${global.themeemoji} pesos : ${res.size}
+${global.themeemoji} calidad : ${res.quality}
 
-_Select video or audio and wait a while_`
+_Seleciones video/audio, y espere un momento_`
 let buttons = [
 {buttonId: `ytvd ${res.link}`, buttonText: {displayText: '► Video'}, type: 1},
 {buttonId: `ytad ${res.mp3}`, buttonText: {displayText: '♫ Audio'}, type: 1}
@@ -8079,9 +8078,9 @@ break
 case 'ytvd': {
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
-XeonBotInc.sendMessage(from, {video:{url:args[0]}, mimetype:"video/mp4", caption:"Success", contextInfo:{externalAdReply:{
-title:`${global.botname}`,
-body:`${global.botname}`,
+XeonBotInc.sendMessage(from, {video:{url:args[0]}, mimetype:"video/mp4", caption:"exitos", contextInfo:{externalAdReply:{
+titulo:`${global.botname}`,
+nombre:`${global.botname}`,
 thumbnail: log0,
 mediaType:2,
 mediaUrl: `${global.websitex}`,
@@ -8093,8 +8092,8 @@ case 'ytad': {
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 XeonBotInc.sendMessage(from, {audio:{url:args[0]}, mimetype:"audio/mp4", ptt:true, contextInfo:{externalAdReply:{
-title:`${global.botname}`,
-body:`${global.botname}`,
+titulo:`${global.botname}`,
+nombre:`${global.botname}`,
 thumbnail: log0,
 mediaType:2,
 mediaUrl: `${global.websitex}`,
@@ -8108,7 +8107,7 @@ break
                 if (!text) return reply(mess.linkm)
                 if (!isUrl(args[0]) && !args[0].includes('youtube.com')) return reply(`The link you provided is invalid`)
                 anu = await fetchJson(`https://api.akuari.my.id/downloader/youtube?link=${text}`)        
-                if (anu.filesize_video >= 999999) return reply('*File Over Limit* '+util.format(anu))
+                if (anu.filesize_video >= 999999) return reply('*el archivo es muy pesado imposible de descarga* '+util.format(anu))
                 tummb = await getBuffer(anu.thumb)
                 audio = await getBuffer(anu.audio)        
                 XeonBotInc.sendMessage(m.chat, {document: audio, mimetype: 'audio/mpeg', fileName: `${anu.title}`}, { quoted : m }).catch((err) => reply(mess.error))
@@ -8121,11 +8120,11 @@ if (isBanChat) return reply(mess.banChat)
   if (!text) return reply(`*Use ${prefix + command} put yt shorts link*`)
   if (!isUrl(args[0]) && !args[0].includes('youtube')) return reply(`The link you provided is not valid`)
   xeonkey.Youtube(`${text}`).then(async (data) => {
-  if (data.medias[0].formattedSize.split('MB')[0] >= 999) return reply('*File Over Limit* '+util.format(data)) 
+  if (data.medias[0].formattedSize.split('MB')[0] >= 999) return reply('*el archivo es muy pesado imposible de descarga* '+util.format(data)) 
   cap = `
-*YOUTUBE SHORTS*
+*YOUTUBE*
 
-*${themeemoji}TITLE:* ${data.title}\n*${themeemoji}QUALITY:* ${data.medias[0].quality}\n*${themeemoji}SIZE:* ${data.medias[0].formattedSize}\n*${themeemoji}DURATION* ${data.duration}\n*${themeemoji}ID:* ${data.medias[0].cached}\n*${themeemoji}LINK:* ${data.url}\n\n*${botname}*`
+*${themeemoji}TITULO:* ${data.title}\n*${themeemoji}CALIDAD:* ${data.medias[0].quality}\n*${themeemoji}PESO:* ${data.medias[0].formattedSize}\n*${themeemoji}DURACIÓN* ${data.duration}\n*${themeemoji}ID:* ${data.medias[0].cached}\n*${themeemoji}LINK:* ${data.url}\n\n*${botname}*`
   buf = await getBuffer(data.thumbnail)
   XeonBotInc.sendMessage(m.chat, { image: { url: data.thumbnail }, jpegThumbnail:buf, caption: `${cap}` }, { quoted: m })
   XeonBotInc.sendMessage(m.chat, { video: { url: data.medias[0].url }, jpegThumbnail:buf, caption: `*${themeemoji}TITLE:* ${data.title}\n*${themeemoji}QUALITY:* ${data.medias[0].quality}\n*${themeemoji}SIZE:* ${data.medias[0].formattedSize}` }, { quoted: m })  
@@ -8137,16 +8136,16 @@ if (isBanChat) return reply(mess.banChat)
 	  case 'pinterest': case 'pin': {
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
-if (!args.join(" ")) return reply("What picture are you looking for?")
+if (!args.join(" ")) return reply("que imagen esta buscando?")
 try {
 hx.pinterest(args.join(" ")).then(async(res) => {
 imgnyee = res[Math.floor(Math.random() * res.length)]
 let buttons = [
-{buttonId: `pinterest ${args.join(" ")}`, buttonText: {displayText: 'Next Image 👀'}, type: 1}
+{buttonId: `pinterest ${args.join(" ")}`, buttonText: {displayText: 'siguiente'}, type: 1}
 ]
 let buttonMessage = {
 image: { url: imgnyee },
-caption:  `${global.dogeemoji} Title : ` + args.join(" ") + `\n${global.dogeemoji} Media Url : `+imgnyee,
+caption:  `${global.dogeemoji} Titulo : ` + args.join(" ") + `\n${global.dogeemoji} URL : `+imgnyee,
 footer: `${global.botname}`,
 buttons: buttons,
 headerType: 4,
@@ -8172,12 +8171,11 @@ case 'mediafire': {
 if (!text) return reply(mess.linkm)
 if (!isUrl(args[0]) && !args[0].includes('mediafire.com')) return reply(`The link you provided is invalid`)
 const baby1 = await mediafireDl(text)
-if (baby1[0].size.split('MB')[0] >= 999) return reply('*File Over Limit* '+util.format(baby1))
-const result4 = `*MEDIAFIRE DOWNLOADER*
+if (baby1[0].size.split('MB')[0] >= 999) return reply('*el archivo es muy pesado imposible de descarga* '+util.format(baby1))
+const result4 = `*MEDIAFIRE DESCARGA*
 				
-*Name* : ${baby1[0].nama}
-*Size* : ${baby1[0].size}
-*Mime* : ${baby1[0].mime}
+*Nombre* : ${baby1[0].nama}
+*peso* : ${baby1[0].size}
 *Link* : ${baby1[0].link}`
 reply(`${result4}`)
 XeonBotInc.sendMessage(m.chat, { document : { url : baby1[0].link}, fileName : baby1[0].nama, mimetype: baby1[0].mime }, { quoted : m }).catch ((err) => reply(mess.error))
@@ -8197,12 +8195,12 @@ break
 		    let buttonMessage = {
 		        image: { url: anu.author.profilePic },
 			caption: `
-${themeemoji} Title : ${anu.title}
-${themeemoji} Author : ${anu.author.name}
+${themeemoji} Titulo : ${anu.title}
+${themeemoji} Autor : ${anu.author.name}
 ${themeemoji} Like : ${anu.like}
-${themeemoji} Caption : ${anu.caption}
+${themeemoji} Calidad : ${anu.caption}
 ${themeemoji} Url : ${anu.media[0]}
-To Download Media, Please Click One Of The Buttons Below Or Enter The ytmp3/ytmp4 Command With The Url Above
+descarga Media, haga clip algunos de los botones a continuación ytmp3/ytmp4 con la URL de arriba
 `,
 			footer: XeonBotInc.user.name,
 			buttons,
@@ -8211,7 +8209,7 @@ To Download Media, Please Click One Of The Buttons Below Or Enter The ytmp3/ytmp
 		    XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
 		} else if (anu.type == 'image') {
 		    anu.media.map(async (url) => {
-		        XeonBotInc.sendMessage(m.chat, { image: { url }, caption: `${themeemoji} Title : ${anu.title}\n${themeemoji} Author : ${anu.author.name}\n${themeemoji} Like : ${anu.like}\n${themeemoji} Caption : ${anu.caption}` }, { quoted: m })
+		        XeonBotInc.sendMessage(m.chat, { image: { url }, caption: `${themeemoji} Titulo : ${anu.title}\n${themeemoji} Autor : ${anu.author.name}\n${themeemoji} Like : ${anu.like}\n${themeemoji} Caption : ${anu.caption}` }, { quoted: m })
 		    })
 		}
 	    }
@@ -8219,7 +8217,7 @@ To Download Media, Please Click One Of The Buttons Below Or Enter The ytmp3/ytmp
         case 'ringtone': {
         	if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
-		if (!text) return reply(`Where is the ringtone name noob?, Example : ${prefix + command} charlie puth`)
+		if (!text) return reply(`donde esta el nombre o tono de llamada?, Ejemplo : ${prefix + command} charlie puth`)
         let { ringtone } = require('./lib/scraper')
 		let anu = await ringtone(text)
 		let result = anu[Math.floor(Math.random() * anu.length)]
@@ -8540,7 +8538,7 @@ View List Of Messages With ${prefix}listmsg`)
 	if (isBanChat) return reply(mess.banChat)
                 if (!isCreator) return replay(`${mess.owner}`)
                 XeonBotInc.public = true
-                reply('Successful Change To Public Usage')
+                reply('cambiado con exito a uso público')
             }
             break
             case 'self': {
@@ -8548,7 +8546,7 @@ View List Of Messages With ${prefix}listmsg`)
 	if (isBanChat) return reply(mess.banChat)
                 if (!isCreator) return replay(`${mess.owner}`)
                 XeonBotInc.public = false
-                reply('Successful Change To Self Usage')
+                reply('cambiado con exito a uso privado')
             }
             break
 case 'setstatuts':
@@ -8610,9 +8608,9 @@ break
                 neww = performance.now()
                 oldd = performance.now()
                 respon = `
-Response Speed ${latensi.toFixed(4)} _Second_ \n ${oldd - neww} _miliseconds_\n\nRuntime : ${runtime(process.uptime())}
+Respuesta el  ${latensi.toFixed(4)} _Second_ \n ${oldd - neww} _milisegundos_\n\nactivad : ${runtime(process.uptime())}
 
-💻 Info Server
+💻 Info Servidor
 RAM: ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
 
 _NodeJS Memory Usaage_
@@ -8647,6 +8645,9 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             break
             case 'owner': case 'creator': {
                 XeonBotInc.sendContact(m.chat, global.vcardowner, m)
+                XeonBotInc.sendContact(m.chat, global.vcardowner1, m)
+                XeonBotInc.sendContact(m.chat, global.vcardowner2, m)
+                
             }
             break
   case 'setmenu': {

@@ -38,23 +38,23 @@ global.doc5 = 'application/pdf'
 global.doc6 = 'application/vnd.android.package-archive'
 
 //owmner v card
-global.vcardowner = ['56977774748'] //ur owner number
-global.ownername = "creador" //ur owner name
-global.ytname = "YT: loli" //ur yt chanel name
-global.socialm = "GitHub: " //ur github or insta name
-global.location = "argentina" //ur location
+global.vcardowner = ['56977774748'] //numero del owner
+global.ownername = "creador" //nombre
+global.ytname = "loli" //canal de Youtube 
+global.socialm = "GitHub: " //github
+global.location = "argentina" //lugar
 //__________________
-global.vcardowner1 = ['51935116539'] //ur owner number
-global.ownername1 = "desarrollo" //ur owner name
-global.ytname1 = "YT: loli" //ur yt chanel name
-global.socialm1 = "GitHub: " //ur github or insta name
-global.location1 = "argentina" //ur location
+global.vcardowner1 = ['51935116539'] //número
+global.ownername1 = "desarrollo" //nombre
+global.ytname1 = "YT: loli" //canal YouTube
+global.socialm1 = "GitHub: " //gitbut 
+global.location1 = "peru" //lugar
 //__________________
-global.vcardowner2 = ['34623442554'] //ur owner number
-global.ownername2 = "desarrollo" //ur owner name
-global.ytname2 = "YT: loli" //ur yt chanel name
-global.socialm2 = "GitHub: " //ur github or insta name
-global.location2 = "argentina" //ur location
+global.vcardowner2 = ['34623442554'] //numero
+global.ownername2 = "desarrollo" //nombre
+global.ytname2 = "YT: loli" //canal de Youtube 
+global.socialm2 = "GitHub: " //gitbut 
+global.location2 = "argentina" //lugar
 
 //bot bomdy 
 global.owner = ['56977774748' , '51935116539']
