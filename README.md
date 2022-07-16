@@ -29,6 +29,9 @@
 
  <p align="hihg">   
 <a href="https://facebook.com/groups/721802642266362" target="_blank"> <img src="https://img.shields.io/badge/-Facebook-%23E4405F?style=for-the-badge&logo=facebook&logoColor=black" target="_blank"></a> <img src="https://github.com/siegrin/siegrin/blob/main/Assets/Handshake.gif" height="30px">
+   
+ <p align="hihg">   
+<a href="https://portal.acidicnodes.com" target="_blank"> <img src="https://img.shields.io/badge/-AcidicNodes-%23E4405F?style=for-the-badge&logo=acidicnodes&logoColor=black" target="_blank"></a> <img src="https://github.com/siegrin/siegrin/blob/main/Assets/Handshake.gif" height="30px">
 
 [![blog](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)
 ](https://youtube.com/channel/UC9b3UIVnVb5eQt7_Y-Qz-3A)  <img src="https://github.com/siegrin/siegrin/blob/main/Assets/powerup.gif" height="29px">
