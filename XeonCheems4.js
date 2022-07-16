@@ -769,11 +769,11 @@ const emoji = new EmojiAPI();
 emoji.get(satu)
 .then(emoji => {
 const buttons = [{buttonId: "y", buttonText: {displayText:satu}, type: 1}]
-const buttonMessage = {image: {url: emoji.images[dua].url},caption: "Here you go!",footerText: `${botname}`,buttons: buttons,headerType: 4}
+const buttonMessage = {image: {url: emoji.images[dua].url},caption: "aqui tiene!",footerText: `${botname}`,buttons: buttons,headerType: 4}
 XeonBotInc.sendMessage(from, buttonMessage, {quoted:m})
 })
 } catch (e) {
-reply("Emoji error, please enter another emoji\nNOTE : Just enter 1 emoji")
+reply("error emoji, ingrese otro emoji\nNOTA : solo ingrese 1 emoji")
 }
 }
 
@@ -955,11 +955,11 @@ ${arr.slice(0, 3).join('')}
 ${arr.slice(3, 6).join('')}
 ${arr.slice(6).join('')}
 
-${isWin ? `@${winner.split('@')[0]} Won!` : isTie ? `Game Over` : `Turn ${['❌', '⭕'][1 * room.game._currentTurn]} (@${room.game.currentTurn.split('@')[0]})`}
+${isWin ? `@${winner.split('@')[0]} Won!` : isTie ? `Game Over` : `es tu Turno ${['❌', '⭕'][1 * room.game._currentTurn]} (@${room.game.currentTurn.split('@')[0]})`}
 ❌: @${room.game.playerX.split('@')[0]}
 ⭕: @${room.game.playerO.split('@')[0]}
 
-Typed *surrender* to surrender and admited defeat`
+escriba *surrender* para terminar el juegos`
 	    if ((room.game._currentTurn ^ isSurrender ? room.x : room.o) !== m.chat)
 	    room[room.game._currentTurn ^ isSurrender ? 'x' : 'o'] = m.chat
 	    if (room.x !== room.o) await XeonBotInc.sendText(room.x, str, m, { mentions: parseMention(str) } )
@@ -995,10 +995,10 @@ Click https://wa.me/${botNumber.split`@`[0]}`, m, { mentions: [roof.p, roof.p2] 
 	    if (!roof.pilih) XeonBotInc.sendText(roof.p, `Please Select \n\pierbra🗿\nPapel📄\ntijeras✂️`, m)
 	    if (!roof.pilih2) XeonBotInc.sendText(roof.p2, `Please Select \n\npierbra🗿\nPapel📄\ntijeras✂️`, m)
 	    roof.waktu_milih = setTimeout(() => {
-	    if (!roof.pilih && !roof.pilih2) XeonBotInc.sendText(m.chat, `Both Players Don't Want To Play,\nSuit Canceled`)
+	    if (!roof.pilih && !roof.pilih2) XeonBotInc.sendText(m.chat, `ando jugadores no quiere jugar,\njuegos cancelaron`)
 	    else if (!roof.pilih || !roof.pilih2) {
 	    win = !roof.pilih ? roof.p2 : roof.p
-	    XeonBotInc.sendTextWithMentions(m.chat, `@${(roof.pilih ? roof.p2 : roof.p).split`@`[0]} Didn't Choose Suit, Game Over!`, m)
+	    XeonBotInc.sendTextWithMentions(m.chat, `@${(roof.pilih ? roof.p2 : roof.p).split`@`[0]} no eliga, el juegos a terminando!`, m)
 	    }
 	    delete this.suit[roof.id]
 	    return !0
@@ -1006,21 +1006,21 @@ Click https://wa.me/${botNumber.split`@`[0]}`, m, { mentions: [roof.p, roof.p2] 
 	    }
 	    let jwb = m.sender == roof.p
 	    let jwb2 = m.sender == roof.p2
-	    let g = /scissors/i
-	    let b = /rock/i
-	    let k = /paper/i
-	    let reg = /^(scissors|rock|paper)/i
+	    let g = /tijeras/i
+	    let b = /pierbra/i
+	    let k = /papel/i
+	    let reg = /^(tijeras|pierbra|papel)/i
 	    if (jwb && reg.test(m.text) && !roof.pilih && !m.isGroup) {
 	    roof.pilih = reg.exec(m.text.toLowerCase())[0]
 	    roof.text = m.text
-	    reply(`You Have Chosen ${m.text} ${!roof.pilih2 ? `\n\nWaiting For The Opponent To Choose` : ''}`)
-	    if (!roof.pilih2) XeonBotInc.sendText(roof.p2, '_The Opponent Has Chosen_\nNow It Is Your Turn', 0)
+	    reply(`has eligido ${m.text} ${!roof.pilih2 ? `\n\nesperamos a que oponerte elija` : ''}`)
+	    if (!roof.pilih2) XeonBotInc.sendText(roof.p2, '_el oponerte al elegido_\nahora es tu Turno', 0)
 	    }
 	    if (jwb2 && reg.test(m.text) && !roof.pilih2 && !m.isGroup) {
 	    roof.pilih2 = reg.exec(m.text.toLowerCase())[0]
 	    roof.text2 = m.text
-	    reply(`You Have Chosen ${m.text} ${!roof.pilih ? `\n\nWaiting For The Opponent To Choose` : ''}`)
-	    if (!roof.pilih) XeonBotInc.sendText(roof.p, '_The Opponent Has Chosen_\nNow It Is Your Turn', 0)
+	    reply(`has elegidos ${m.text} ${!roof.pilih ? `\n\nesperamos a que oponerte elija` : ''}`)
+	    if (!roof.pilih) XeonBotInc.sendText(roof.p, '_el oponerte al elegido_\nahora es tu Turno', 0)
 	    }
 	    let stage = roof.pilih
 	    let stage2 = roof.pilih2
@@ -1033,10 +1033,10 @@ Click https://wa.me/${botNumber.split`@`[0]}`, m, { mentions: [roof.p, roof.p2] 
 	    else if (k.test(stage) && b.test(stage2)) win = roof.p
 	    else if (k.test(stage) && g.test(stage2)) win = roof.p2
 	    else if (stage == stage2) tie = true
-	    XeonBotInc.sendText(roof.asal, `_*Suit Results*_${tie ? '\nSERIES' : ''}
+	    XeonBotInc.sendText(roof.asal, `_*resultados*_${tie ? '\nSERIES' : ''}
 
-@${roof.p.split`@`[0]} (${roof.text}) ${tie ? '' : roof.p == win ? ` Win \n` : ` Lost \n`}
-@${roof.p2.split`@`[0]} (${roof.text2}) ${tie ? '' : roof.p2 == win ? ` Win \n` : ` Lost \n`}
+@${roof.p.split`@`[0]} (${roof.text}) ${tie ? '' : roof.p == win ? ` ganar \n` : ` pierde \n`}
+@${roof.p2.split`@`[0]} (${roof.text2}) ${tie ? '' : roof.p2 == win ? ` ganar \n` : ` pierde \n`}
 `.trim(), m, { mentions: [roof.p, roof.p2] })
 	    delete this.suit[roof.id]
 	    }
@@ -1142,7 +1142,7 @@ if (!isCreator) return replay(mess.owner)
 if (args[0] === "on") {
 if (isBanChat) return replay('Already Banned')
 banchat.push(from)
-replay('Success in banning the gc')
+replay('chat baneado con exito no estare disponible el este chat')
 var groupe = await XeonBotInc.groupMetadata(from)
 var members = groupe['participants']
 var mems = []
@@ -1151,16 +1151,17 @@ mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
 })
 XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️ ALERTA ⚠️ 」\`\`\`\n\nel chat a sigo baneado por mal uso de bot!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
 } else if (args[0] === "off") {
-if (!isBanChat) return replay('Already Unbanned')
+if (!isBanChat) return replay('chat desbaneado con exito, ya estoy disponible')
 let off = banchat.indexOf(from)
 banchat.splice(off, 1)
-replay('Success in unbanning the gc')
+replay('chat desbaneado con exito, ya estoy disponible')
 } else {
   let buttonsntnsfw = [
   { buttonId: `${command} on`, buttonText: { displayText: 'Ban' }, type: 1 },
   { buttonId: `${command} off`, buttonText: { displayText: 'Unban' }, type: 1 }
   ]
-  await XeonBotInc.sendButtonText(m.chat, buttonsntnsfw, `Please click the button below\n\nBan to Ban\nUnban to unban`, `${global.botname}`, m)
+  await XeonBotInc.sendButtonText(m.chat, buttonsntnsfw, `que quiere hacer? 
+ haga clip el los botones a continuación\n\nBan\nunban`, `${global.botname}`, m)
   }
   }
   break
@@ -1177,11 +1178,11 @@ orgnye = m.quoted.sender
 }
 const isBane = banUser.includes(orgnye)
 if (args[0] === "add") {
-if (isBane) return ads('User was already banned')
+if (isBane) return ads('el usarios ya fue baneado')
 banUser.push(orgnye)
 replay(`Successfully banned the user`)
 } else if (args[0] === "del") {
-if (!isBane) return ads('User was already unbanned')
+if (!isBane) return ads('eo usarios ya fue desbaneado')
 let delbans = banUser.indexOf(orgnye)
 banUser.splice(delbans, 1)
 replay(`Successfully unbanned the user`)
@@ -1251,7 +1252,7 @@ case 'mining': case 'mine':{
 if (isBanChat) return reply(mess.banChat)
 if (q.includes('--help')) return reply(examkosong) 
   if (!isInventory){ addInventori(m.sender) }
-  if (isCekDarah < 1) return reply(`You're Tired!, Try To Heal Using Potions`) 
+  if (isCekDarah < 1) return reply(`esta cansado, intente recuperarse usado porción`) 
   let besi = [1,2,5,0,3,0,1,1,4,1,5,0,0]
   let emas = [0,1,2,3,0,0,0,1,1,0,0,2]
   let emerald = [0,0,1,0,0,1,0,2,1,0,0,1]
@@ -1259,12 +1260,12 @@ if (q.includes('--help')) return reply(examkosong)
   var emasnya = emas[Math.floor(Math.random() * emas.length)]  
   var emeraldnya = emerald[Math.floor(Math.random() * emerald.length)]  
   setTimeout( () => {
-  let caption = `[ MINING RESULT ]\n*Iron* : ${besinya}\n*Gold* : ${emasnya}\n*Emerald* : ${emeraldnya}`
+  let caption = `[ RESULTADOS ]\n*Iron* : ${besinya}\n*oro* : ${emasnya}\n*Esmeralda* : ${emeraldnya}`
   let buttons = [
       {
        buttonId: `${prefix + command}`, 
        buttonText: {
-        displayText: 'Mine Again⛏️'
+        displayText: 'Mine otra vez⛏️'
       }, type: 1},
     ]
     let buttonMessage = {
@@ -1625,14 +1626,14 @@ if (isBanChat) return reply(mess.banChat)
             let timeout = 60000
             if (Object.values(this.suit).find(roof => roof.id.startsWith('suit') && [roof.p, roof.p2].includes(m.sender))) return replay(`Complete Your Previous Suit`)
 	    if (m.mentionedJid[0] === m.sender) return reply(`Can't Play With Myself !`)
-            if (!m.mentionedJid[0]) return reply(`_Who Do You Want To Challenge?_\nTag The Person..\n\nExample : ${prefix}suit @${owner[1]}`, m.chat, { mentions: [owner[1] + '@s.whatsapp.net'] })
-            if (Object.values(this.suit).find(roof => roof.id.startsWith('suit') && [roof.p, roof.p2].includes(m.mentionedJid[0])))  reply(`The Person You Are Challenging Is Playing Suit With Someone Else :(`)
+            if (!m.mentionedJid[0]) return reply(`_a quien quiere desafía?_\netiquetas a la persona..\n\nEjemplo : ${prefix}suit @${owner[1]}`, m.chat, { mentions: [owner[1] + '@s.whatsapp.net'] })
+            if (Object.values(this.suit).find(roof => roof.id.startsWith('suit') && [roof.p, roof.p2].includes(m.mentionedJid[0])))  reply(`lq persona a que desafía esta jugados con otra persona :(`)
             let id = 'suit_' + new Date() * 1
-            let caption = `_*SUIT PvP*_
+            let caption = `_*juga*_
 
-@${m.sender.split`@`[0]} menantang @${m.mentionedJid[0].split`@`[0]} To Play Suit
+@${m.sender.split`@`[0]} te desafia @${m.mentionedJid[0].split`@`[0]}
 
-Please @${m.mentionedJid[0].split`@`[0]} To Type Accept/Reject`
+por favor seleccione @${m.mentionedJid[0].split`@`[0]} escriba Acepta/Rechazar`
             this.suit[id] = {
             chat: await XeonBotInc.sendText(m.chat, caption, m, { mentions: parseMention(caption) }),
             id: id,
@@ -1640,7 +1641,7 @@ Please @${m.mentionedJid[0].split`@`[0]} To Type Accept/Reject`
             p2: m.mentionedJid[0],
             status: 'wait',
             waktu: setTimeout(() => {
-            if (this.suit[id]) XeonBotInc.sendText(m.chat, `_Suit Time Out_`, m)
+            if (this.suit[id]) XeonBotInc.sendText(m.chat, `_se acabo el tiempo_`, m)
             delete this.suit[id]
             }, 60000), poin, poin_lose, timeout
             }
@@ -2031,7 +2032,7 @@ case 'dare':
                    if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
               const dare =[
-    "eat 2 tablespoons of rice without any side dishes, if it's dragging you can drink",
+    "comer 2 cucharadas de arroz sin guarniciones, si se está arrastrando se puede beber",
     "spill people who make you pause",
     "call crush/pickle now and send ss",
     "drop only emote every time you type on gc/pc for 1 day.",
@@ -2627,17 +2628,17 @@ if (isBanChat) return reply(mess.banChat)
 if (!m.isGroup) return replay(mess.group)
 if (!isBotAdmins) return reply(mess.botAdmin)
 if (!isAdmins && !isCreator) return reply(mess.admin)
-if (args.length < 1) return reply('type auto sticker on to enable\ntype auto sticker off to disable')
+if (args.length < 1) return reply('escriba autosticker on para activa \no autosticker off para apagar')
 if (args[0]  === 'on'){
 if (isAutoSticker) return reply(`Already activated`)
 autosticker.push(from)
 fs.writeFileSync('./database/autosticker.json', JSON.stringify(autosticker))
-reply('autosticker activated')
+reply('autosticker activado con exito')
 } else if (args[0] === 'off'){
 let anu = autosticker.indexOf(from)
 autosticker.splice(anu, 1)
 fs.writeFileSync('./database/autosticker.json', JSON.stringify(autosticker))
-reply('auto sticker deactivated')
+reply('autosticker desactivado')
 }
 break
 case 'autostickerpc':
@@ -2665,27 +2666,27 @@ if (!m.isGroup) return replay(mess.group)
 if (!isBotAdmins) return replay(mess.botAdmin)
 if (!isAdmins && !isCreator) return replay(mess.admin)
 if (args[0] === "on") {
-if (AntiLink) return replay('Already activated')
+if (AntiLink) return replay('activado con exito')
 ntilink.push(from)
-replay('Success in turning on group chat antilink in this group')
+replay('antilink activado con exito✅')
 var groupe = await XeonBotInc.groupMetadata(from)
 var members = groupe['participants']
 var mems = []
 members.map(async adm => {
 mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
 })
-XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️Warning⚠️ 」\`\`\`\n\nIf you're not an admin, don't send the group link in this group or u will be kicked immediately`, contextInfo: { mentionedJid : mems }}, {quoted:m})
+XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️ ALERTA ⚠️ 」\`\`\`\n\nel antilink, esta activo si manda un enlace de otro grupo seda eliminado`, contextInfo: { mentionedJid : mems }}, {quoted:m})
 } else if (args[0] === "off") {
-if (!AntiLink) return replay('Already deactivated')
+if (!AntiLink) return replay('desactivado con exito')
 let off = ntilink.indexOf(from)
 ntilink.splice(off, 1)
-replay('Success in turning off group chat antilink in this group')
+replay('antilink desactivado con exito✅')
 } else {
   let buttonsntilink = [
   { buttonId: `${command} on`, buttonText: { displayText: 'On' }, type: 1 },
   { buttonId: `${command} off`, buttonText: { displayText: 'Off' }, type: 1 }
   ]
-  await XeonBotInc.sendButtonText(m.chat, buttonsntilink, `Please click the button below\n\nOn to enable\nOff to disable`, `${global.botname}`, m)
+  await XeonBotInc.sendButtonText(m.chat, buttonsntilink, `selecione una opción \n\nOn pará activa\nOff para desactivar`, `${global.botname}`, m)
   }
   }
   break
@@ -2696,27 +2697,27 @@ if (!m.isGroup) return replay(mess.group)
 if (!isBotAdmins) return replay(mess.botAdmin)
 if (!isAdmins && !isCreator) return replay(mess.admin)
 if (args[0] === "on") {
-if (AntiLinkYoutubeVid) return replay('Already activated')
+if (AntiLinkYoutubeVid) return replay('activado con exito')
 ntilinkytvid.push(from)
-replay('Success in turning on youtube video antilink in this group')
+replay('activado con exito ✅')
 var groupe = await XeonBotInc.groupMetadata(from)
 var members = groupe['participants']
 var mems = []
 members.map(async adm => {
 mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
 })
-XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️Warning⚠️ 」\`\`\`\n\nIf you're not an admin, don't send the youtube video link in this group or u will be kicked immediately!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
+XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️ ALERTA ⚠️ 」\`\`\`\n\nsi envia un link, seda explusado del grupo!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
 } else if (args[0] === "off") {
-if (!AntiLinkYoutubeVid) return replay('Already deactivated')
+if (!AntiLinkYoutubeVid) return replay('desactivado con exito')
 let off = ntilinkytvid.indexOf(from)
 ntilinkytvid.splice(off, 1)
-replay('Success in turning off youtube video antilink in this group')
+replay('desactivado con exito ✅')
 } else {
   let buttonsntilink = [
   { buttonId: `${command} on`, buttonText: { displayText: 'On' }, type: 1 },
   { buttonId: `${command} off`, buttonText: { displayText: 'Off' }, type: 1 }
   ]
-  await XeonBotInc.sendButtonText(m.chat, buttonsntilink, `Please click the button below\n\nOn to enable\nOff to disable`, `${global.botname}`, m)
+  await XeonBotInc.sendButtonText(m.chat, buttonsntilink, `selecione una opción\n\nOn para activa\nOff para desactivar`, `${global.botname}`, m)
   }
   }
   break
@@ -2727,27 +2728,27 @@ if (!m.isGroup) return replay(mess.group)
 if (!isBotAdmins) return replay(mess.botAdmin)
 if (!isAdmins && !isCreator) return replay(mess.admin)
 if (args[0] === "on") {
-if (AntiLinkYoutubeChannel) return replay('Already activated')
+if (AntiLinkYoutubeChannel) return replay('activado con exito')
 ntilinkytch.push(from)
-replay('Success in turning on youtube channel antilink in this group')
+replay('activado con exito ✅')
 var groupe = await XeonBotInc.groupMetadata(from)
 var members = groupe['participants']
 var mems = []
 members.map(async adm => {
 mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
 })
-XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️Warning⚠️ 」\`\`\`\n\nIf you're not an admin, don't send the youtube channel link in this group or u will be kicked immediately!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
+XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️ ALERTA ⚠️ 」\`\`\`\n\nsi envia un link de YouTube seda eliminado del grupo!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
 } else if (args[0] === "off") {
-if (!AntiLinkYoutubeChannel) return replay('Already deactivated')
+if (!AntiLinkYoutubeChannel) return replay('desactivado con exito')
 let off = ntilinkytch.indexOf(from)
 ntilinkytch.splice(off, 1)
-replay('Success in turning off youtube channel antilink in this group')
+replay('desactivado con exito ✅')
 } else {
   let buttonsntilink = [
   { buttonId: `${command} on`, buttonText: { displayText: 'On' }, type: 1 },
   { buttonId: `${command} off`, buttonText: { displayText: 'Off' }, type: 1 }
   ]
-  await XeonBotInc.sendButtonText(m.chat, buttonsntilink, `Please click the button below\n\nOn to enable\nOff to disable`, `${global.botname}`, m)
+  await XeonBotInc.sendButtonText(m.chat, buttonsntilink, `seleciones una opción \n\nOn para activar\nOff para desactivar`, `${global.botname}`, m)
   }
   }
   break
@@ -2758,27 +2759,27 @@ if (!m.isGroup) return replay(mess.group)
 if (!isBotAdmins) return replay(mess.botAdmin)
 if (!isAdmins && !isCreator) return replay(mess.admin)
 if (args[0] === "on") {
-if (AntiLinkInstagram) return replay('Already activated')
+if (AntiLinkInstagram) return replay('activado con exito')
 ntilinkig.push(from)
-replay('Success in turning on instagram antilink in this group')
+replay('activado con exito ✅')
 var groupe = await XeonBotInc.groupMetadata(from)
 var members = groupe['participants']
 var mems = []
 members.map(async adm => {
 mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
 })
-XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️Warning⚠️ 」\`\`\`\n\nIf you're not an admin, don't send the instagram link in this group or u will be kicked immediately!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
+XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️ ALERTA ⚠️ 」\`\`\`\n\nsi envia un enlace de Instagram, seda eliminado del grupo!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
 } else if (args[0] === "off") {
-if (!AntiLinkInstagram) return replay('Already deactivated')
+if (!AntiLinkInstagram) return replay('desactivado con exito')
 let off = ntilinkig.indexOf(from)
 ntilinkig.splice(off, 1)
-replay('Success in turning off instagram antilink in this group')
+replay('desactivado con exito ✅')
 } else {
   let buttonsntilink = [
   { buttonId: `${command} on`, buttonText: { displayText: 'On' }, type: 1 },
   { buttonId: `${command} off`, buttonText: { displayText: 'Off' }, type: 1 }
   ]
-  await XeonBotInc.sendButtonText(m.chat, buttonsntilink, `Please click the button below\n\nOn to enable\nOff to disable`, `${global.botname}`, m)
+  await XeonBotInc.sendButtonText(m.chat, buttonsntilink, `seleciones una opción \n\nOn para activa\nOff para desactivar`, `${global.botname}`, m)
   }
   }
   break
@@ -2789,27 +2790,27 @@ if (!m.isGroup) return replay(mess.group)
 if (!isBotAdmins) return replay(mess.botAdmin)
 if (!isAdmins && !isCreator) return replay(mess.admin)
 if (args[0] === "on") {
-if (AntiLinkFacebook) return replay('Already activated')
+if (AntiLinkFacebook) return replay('activado con exito')
 ntilinkfb.push(from)
-replay('Success in turning on facebook antilink in this group')
+replay('activado con exito ✅')
 var groupe = await XeonBotInc.groupMetadata(from)
 var members = groupe['participants']
 var mems = []
 members.map(async adm => {
 mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
 })
-XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️Warning⚠️ 」\`\`\`\n\nIf you're not an admin, don't send the facebook link in this group or u will be kicked immediately!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
+XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️ ALERTA ⚠️ 」\`\`\`\n\nsi envia un enlace de facebook, seda eliminado del grupo!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
 } else if (args[0] === "off") {
-if (!AntiLinkFacebook) return replay('Already deactivated')
+if (!AntiLinkFacebook) return replay('desactivado con exito')
 let off = ntilinkfb.indexOf(from)
 ntilinkfb.splice(off, 1)
-replay('Success in turning off facebook antilink in this group')
+replay('desactivado con exito ✅')
 } else {
   let buttonsntilink = [
   { buttonId: `${command} on`, buttonText: { displayText: 'On' }, type: 1 },
   { buttonId: `${command} off`, buttonText: { displayText: 'Off' }, type: 1 }
   ]
-  await XeonBotInc.sendButtonText(m.chat, buttonsntilink, `Please click the button below\n\nOn to enable\nOff to disable`, `${global.botname}`, m)
+  await XeonBotInc.sendButtonText(m.chat, buttonsntilink, `seleciones una opción \n\nOn para activar\nOff para desactivar`, `${global.botname}`, m)
   }
   }
   break
@@ -2820,27 +2821,27 @@ if (!m.isGroup) return replay(mess.group)
 if (!isBotAdmins) return replay(mess.botAdmin)
 if (!isAdmins && !isCreator) return replay(mess.admin)
 if (args[0] === "on") {
-if (AntiLinkTelegram) return replay('Already activated')
+if (AntiLinkTelegram) return replay('Activado con exito')
 ntilinktg.push(from)
-replay('Success in turning on telegram antilink in this group')
+replay('activado con exito ✅')
 var groupe = await XeonBotInc.groupMetadata(from)
 var members = groupe['participants']
 var mems = []
 members.map(async adm => {
 mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
 })
-XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️Warning⚠️ 」\`\`\`\n\nIf you're not an admin, don't send the telegram link in this group or u will be kicked immediately!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
+XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️ ALERTA ⚠️ 」\`\`\`\n\nsi envia un enlace de telegran seda eliminado deo grupo!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
 } else if (args[0] === "off") {
-if (!AntiLinkTelegram) return replay('Already deactivated')
+if (!AntiLinkTelegram) return replay('desactivado')
 let off = ntilinkig.indexOf(from)
 ntilinkig.splice(off, 1)
-replay('Success in turning off telegram antilink in this group')
+replay('desactivado con exito ✅')
 } else {
   let buttonsntilink = [
   { buttonId: `${command} on`, buttonText: { displayText: 'On' }, type: 1 },
   { buttonId: `${command} off`, buttonText: { displayText: 'Off' }, type: 1 }
   ]
-  await XeonBotInc.sendButtonText(m.chat, buttonsntilink, `Please click the button below\n\nOn to enable\nOff to disable`, `${global.botname}`, m)
+  await XeonBotInc.sendButtonText(m.chat, buttonsntilink, `seleciones una opción \n\nOn para activar\nOff para desactivar`, `${global.botname}`, m)
   }
   }
   break
@@ -2851,27 +2852,27 @@ if (!m.isGroup) return replay(mess.group)
 if (!isBotAdmins) return replay(mess.botAdmin)
 if (!isAdmins && !isCreator) return replay(mess.admin)
 if (args[0] === "on") {
-if (AntiLinkTiktok) return replay('Already activated')
+if (AntiLinkTiktok) return replay('Activado')
 ntilinktt.push(from)
-replay('Success in turning on tiktok antilink in this group')
+replay('activado con exito ✅')
 var groupe = await XeonBotInc.groupMetadata(from)
 var members = groupe['participants']
 var mems = []
 members.map(async adm => {
 mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
 })
-XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️Warning⚠️ 」\`\`\`\n\nIf you're not an admin, don't send the tiktok link in this group or u will be kicked immediately!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
+XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️ ALERTA ⚠️ 」\`\`\`\n\nsi envia un enlace de tiktok, seda eliminado del grupo!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
 } else if (args[0] === "off") {
-if (!AntiLinkTiktok) return replay('Already deactivated')
+if (!AntiLinkTiktok) return replay('desactiva')
 let off = ntilinktt.indexOf(from)
 ntilinktt.splice(off, 1)
-replay('Success in turning off tiktok antilink in this group')
+replay('desactivado.con exito ✅')
 } else {
   let buttonsntilink = [
   { buttonId: `${command} on`, buttonText: { displayText: 'On' }, type: 1 },
   { buttonId: `${command} off`, buttonText: { displayText: 'Off' }, type: 1 }
   ]
-  await XeonBotInc.sendButtonText(m.chat, buttonsntilink, `Please click the button below\n\nOn to enable\nOff to disable`, `${global.botname}`, m)
+  await XeonBotInc.sendButtonText(m.chat, buttonsntilink, `seleciones una opción \n\nOn para activar\nOff para desactivar`, `${global.botname}`, m)
   }
   }
   break
@@ -2882,27 +2883,27 @@ if (!m.isGroup) return replay(mess.group)
 if (!isBotAdmins) return replay(mess.botAdmin)
 if (!isAdmins && !isCreator) return replay(mess.admin)
 if (args[0] === "on") {
-if (AntiLinkTwitter) return replay('Already activated')
+if (AntiLinkTwitter) return replay('Activado')
 ntilinktwt.push(from)
-replay('Success in turning on twitter antilink in this group')
+replay('activado con exito ✅')
 var groupe = await XeonBotInc.groupMetadata(from)
 var members = groupe['participants']
 var mems = []
 members.map(async adm => {
 mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
 })
-XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️Warning⚠️ 」\`\`\`\n\nIf you're not an admin, don't send the twitter link in this group or u will be kicked immediately!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
+XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️ ALERTA ⚠️ 」\`\`\`\n\nsi envia un link de Twitter, seda eliminado del grupo!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
 } else if (args[0] === "off") {
-if (!AntiLinkTwitter) return replay('Already deactivated')
+if (!AntiLinkTwitter) return replay('desactiva')
 let off = ntilinktwt.indexOf(from)
 ntilinktwt.splice(off, 1)
-replay('Success in turning off twitter antilink in this group')
+replay('desactivado con exito ✅')
 } else {
   let buttonsntilink = [
   { buttonId: `${command} on`, buttonText: { displayText: 'On' }, type: 1 },
   { buttonId: `${command} off`, buttonText: { displayText: 'Off' }, type: 1 }
   ]
-  await XeonBotInc.sendButtonText(m.chat, buttonsntilink, `Please click the button below\n\nOn to enable\nOff to disable`, `${global.botname}`, m)
+  await XeonBotInc.sendButtonText(m.chat, buttonsntilink, `seleciones una opción \n\nOn para activar\nOff oara desactiva`, `${global.botname}`, m)
   }
   }
   break
@@ -2913,27 +2914,27 @@ if (!m.isGroup) return replay(mess.group)
 if (!isBotAdmins) return replay(mess.botAdmin)
 if (!isAdmins && !isCreator) return replay(mess.admin)
 if (args[0] === "on") {
-if (AntiLinkTwitter) return replay('Already activated')
+if (AntiLinkTwitter) return replay('Activado')
 ntilinkall.push(from)
-replay('Success in turning on all antilink in this group')
+replay('activado con exito ✅')
 var groupe = await XeonBotInc.groupMetadata(from)
 var members = groupe['participants']
 var mems = []
 members.map(async adm => {
 mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
 })
-XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️Warning⚠️ 」\`\`\`\n\nIf you're not an admin, don't send any link in this group or u will be kicked immediately!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
+XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️ ALERTA ⚠️ 」\`\`\`\n\n si envia un link, seda eliminado del grupo!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
 } else if (args[0] === "off") {
-if (!AntiLinkAll) return replay('Already deactivated')
+if (!AntiLinkAll) return replay('desactivado')
 let off = ntilinkall.indexOf(from)
 ntilinkall.splice(off, 1)
-replay('Success in turning off all antilink in this group')
+replay('desactivado con exito ✅')
 } else {
   let buttonsntilink = [
   { buttonId: `${command} on`, buttonText: { displayText: 'On' }, type: 1 },
   { buttonId: `${command} off`, buttonText: { displayText: 'Off' }, type: 1 }
   ]
-  await XeonBotInc.sendButtonText(m.chat, buttonsntilink, `Please click the button below\n\nOn to enable\nOff to disable`, `${global.botname}`, m)
+  await XeonBotInc.sendButtonText(m.chat, buttonsntilink, `seleciones una opción \n\nOn para activar\nOff para desactivar`, `${global.botname}`, m)
   }
   }
   break
@@ -2944,27 +2945,27 @@ if (!m.isGroup) return replay(mess.group)
 if (!isBotAdmins) return replay(mess.botAdmin)
 if (!isAdmins && !isCreator) return replay(mess.admin)
 if (args[0] === "on") {
-if (antiVirtex) return replay('Already activated')
+if (antiVirtex) return replay('activado')
 ntvirtex.push(from)
-replay('Success in turning on antivirus in this group')
+replay('antivirus activado con exito ✅')
 var groupe = await XeonBotInc.groupMetadata(from)
 var members = groupe['participants']
 var mems = []
 members.map(async adm => {
 mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
 })
-XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️Warning⚠️ 」\`\`\`\n\nNo body is allowed to send virus in this group, member who send will be kicked immediately!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
+XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️ ALERTA ⚠️ 」\`\`\`\n\nsi envia virus/traba, seda eliminado del grupo automáticamente!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
 } else if (args[0] === "off") {
-if (!antiVirtex) return replay('Already deactivated')
+if (!antiVirtex) return replay('desactiva')
 let off = ntvirtex.indexOf(from)
 ntvirtex.splice(off, 1)
-replay('Success in turning off antivirus this group')
+replay('antivirus desactivado con exito ✅')
 } else {
   let buttonsntvirtex = [
   { buttonId: `${command} on`, buttonText: { displayText: 'On' }, type: 1 },
   { buttonId: `${command} off`, buttonText: { displayText: 'Off' }, type: 1 }
   ]
-  await XeonBotInc.sendButtonText(m.chat, buttonsntvirtex, `Please click the button below\n\nOn to enable\nOff to disable`, `${global.botname}`, m)
+  await XeonBotInc.sendButtonText(m.chat, buttonsntvirtex, `seleciones una opción\n\nOn para activar\nOff para desactivar`, `${global.botname}`, m)
   }
   }
   break
@@ -2975,20 +2976,20 @@ if (!m.isGroup) return replay(mess.group)
 if (!isBotAdmins) return replay(mess.botAdmin)
 if (!isAdmins && !isCreator) return replay(mess.admin)
 if (args[0] === "on") {
-if (Autoreply) return replay('Already activated')
+if (Autoreply) return replay('activado')
 autorep.push(from)
-replay('Success in turning on the autoreply in this group')
+replay('respuesta automática activado con exito ✅')
 } else if (args[0] === "off") {
-if (!Autoreply) return replay('Already deactivated')
+if (!Autoreply) return replay('desactiva')
 let off = autorep.indexOf(from)
 autorep.splice(off, 1)
-replay('Success in turning off autoreply in this group')
+replay('respuesta automática desactivado con exito ✅')
 } else {
   let buttonswlcm = [
   { buttonId: `${command} on`, buttonText: { displayText: 'On' }, type: 1 },
   { buttonId: `${command} off`, buttonText: { displayText: 'Off' }, type: 1 }
   ]
-  await XeonBotInc.sendButtonText(m.chat, buttonswlcm, `Please click the button below\n\nOn to enable\nOff to disable`, `${global.botname}`, m)
+  await XeonBotInc.sendButtonText(m.chat, buttonswlcm, `seleciones una opción \n\nOn para activar\nOff para desactivar`, `${global.botname}`, m)
   }
   }
   break
@@ -2999,27 +3000,27 @@ if (!m.isGroup) return replay(mess.group)
 if (!isBotAdmins) return replay(mess.botAdmin)
 if (!isAdmins && !isCreator) return replay(mess.admin)
 if (args[0] === "on") {
-if (antiToxic) return replay('Already activated')
+if (antiToxic) return replay('Activado')
 nttoxic.push(from)
-replay('Success in turning on antitoxic in this group')
+replay('activado con exito ✅')
 var groupe = await XeonBotInc.groupMetadata(from)
 var members = groupe['participants']
 var mems = []
 members.map(async adm => {
 mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
 })
-XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️Warning⚠️ 」\`\`\`\n\nNobody is allowed to use bad words in this group, one who uses will be kicked immediately!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
+XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️ ALERTA ⚠️ 」\`\`\`\n\nNadie puede usar malas palabras en este grupo, el que las use será expulsado de inmediato!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
 } else if (args[0] === "off") {
-if (!antiToxic) return replay('Already deactivated')
+if (!antiToxic) return replay('desactivado con exito')
 let off = nttoxic.indexOf(from)
 nttoxic.splice(off, 1)
-replay('Success in turning off antitoxic in this group')
+replay('desactivado con exito ✅')
 } else {
   let buttonsnttoxci = [
   { buttonId: `${command} on`, buttonText: { displayText: 'On' }, type: 1 },
   { buttonId: `${command} off`, buttonText: { displayText: 'Off' }, type: 1 }
   ]
-  await XeonBotInc.sendButtonText(m.chat, buttonsnttoxic, `Please click the button below\n\nOn to enable\nOff to disable`, `${global.botname}`, m)
+  await XeonBotInc.sendButtonText(m.chat, buttonswlcm, `seleciones una opción \n\nOn para activar\nOff para desactivar`, `${global.botname}`, m)
   }
   }
   break
@@ -3030,27 +3031,27 @@ if (!m.isGroup) return replay(mess.group)
 if (!isBotAdmins) return replay(mess.botAdmin)
 if (!isAdmins && !isCreator) return replay(mess.admin)
 if (args[0] === "on") {
-if (antiWame) return replay('Already activated')
+if (antiWame) return replay('Activado')
 ntwame.push(from)
-replay('Success in turning on antiwame in this group')
+replay('antiwame activado con exito ✅')
 var groupe = await XeonBotInc.groupMetadata(from)
 var members = groupe['participants']
 var mems = []
 members.map(async adm => {
 mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
 })
-XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️Warning⚠️ 」\`\`\`\n\nNobody is allowed to send wa.me in this group, one who sends will be kicked immediately!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
+XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️ ALERTA ⚠️ 」\`\`\`\n\nno puede envia wa.me, o seda eliminado del grupo!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
 } else if (args[0] === "off") {
-if (!antiWame) return replay('Already deactivated')
+if (!antiWame) return replay('desactivado')
 let off = nttoxic.indexOf(from)
 ntwame.splice(off, 1)
-replay('Success in turning off antiwame in this group')
+replay('antiwame desactivado con exito ✅')
 } else {
   let buttonsntwame = [
   { buttonId: `${command} on`, buttonText: { displayText: 'On' }, type: 1 },
   { buttonId: `${command} off`, buttonText: { displayText: 'Off' }, type: 1 }
   ]
-  await XeonBotInc.sendButtonText(m.chat, buttonsntwame, `Please click the button below\n\nOn to enable\nOff to disable`, `${global.botname}`, m)
+  await XeonBotInc.sendButtonText(m.chat, buttonsntwame, `seleciones una opción\n\nOn para activar\nOff para desactivar`, `${global.botname}`, m)
   }
   }
   break
@@ -3061,27 +3062,27 @@ if (!m.isGroup) return replay(mess.group)
 if (!isBotAdmins) return replay(mess.botAdmin)
 if (!isAdmins && !isCreator) return replay(mess.admin)
 if (args[0] === "on") {
-if (AntiNsfw) return replay('Already activated')
+if (AntiNsfw) return replay('Activado')
 ntnsfw.push(from)
-replay('Success in turning on nsfw in this group')
+replay('nsfw activado con exito ✅')
 var groupe = await XeonBotInc.groupMetadata(from)
 var members = groupe['participants']
 var mems = []
 members.map(async adm => {
 mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
 })
-XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️Warning⚠️ 」\`\`\`\n\nNsfw(not safe for work) feature has been enabled in this group, which means one can access sexual graphics from the bot!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
+XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️ ALERTA ⚠️ 」\`\`\`\n\nLa función nNsfw (no es seguro para el trabajo) se ha habilitado en este grupo, lo que significa que uno puede acceder a gráficos sexuales desde el bot!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
 } else if (args[0] === "off") {
-if (!AntiNsfw) return replay('Already deactivated')
+if (!AntiNsfw) return replay('desactiva')
 let off = ntnsfw.indexOf(from)
 ntnsfw.splice(off, 1)
-replay('Success in turning off nsfw in this group')
+replay('nswf desactivado con exito ✅')
 } else {
   let buttonsntnsfw = [
   { buttonId: `${command} on`, buttonText: { displayText: 'On' }, type: 1 },
   { buttonId: `${command} off`, buttonText: { displayText: 'Off' }, type: 1 }
   ]
-  await XeonBotInc.sendButtonText(m.chat, buttonsntnsfw, `Please click the button below\n\nOn to enable\nOff to disable`, `${global.botname}`, m)
+  await XeonBotInc.sendButtonText(m.chat, buttonsntnsfw, `seleciones una opción\n\nOn para activar\nOff para desactivar`, `${global.botname}`, m)
   }
   }
   break
@@ -3175,7 +3176,7 @@ if (isBanChat) return reply(mess.banChat)
       {
        text: "Group Settings",
        footer: botname,
-       title: "Set your group settings here......",
+       title: "Establezca la configuración de su grupo aquí......",
        buttonText: "Click Button",
        sections
       }, { quoted : m }
@@ -3188,7 +3189,7 @@ if (isBanChat) return reply(mess.banChat)
 if (isBanChat) return reply(mess.banChat)
                 if (!m.quoted) reply(false)
                 let { chat, fromMe, id, isBaileys } = m.quoted
-                if (!isBaileys) return replay(`The Message Was Not Sent By A Bot!`)
+                if (!isBaileys) return replay(`el mensaje no fue enviado por el Bot!`)
                 XeonBotInc.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: true, id: m.quoted.id, participant: m.quoted.sender } })
             }
             break
@@ -3196,11 +3197,11 @@ if (isBanChat) return reply(mess.banChat)
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 if (!isCreator) return replay(mess.owner)
-if (!args.join(" ")) return replay(`Where is the text?\n\nExample : ${prefix + command} ${global.ownername}`)
+if (!args.join(" ")) return replay(`y el texto?\n\nEjemplo : ${prefix + command} ${global.ownername}`)
 let getGroups = await XeonBotInc.groupFetchAllParticipating()
 let groups = Object.entries(getGroups).slice(0).map(entry => entry[1])
 let anu = groups.map(v => v.id)
-replay(`Send broadcast to ${anu.length} group chat, time's up ${anu.length * 1.5} second`)
+replay(`enviado mensaje de difuncion al ${anu.length} chat grupos`)
 for (let i of anu) {
 await sleep(1500)
 let btn = [{
@@ -3210,17 +3211,17 @@ url: `${global.websitex}`
 }
 }, {
 urlButton: {
-displayText: 'Script 🍜',
+displayText: 'Sc 🤖',
 url: `${global.botscript}`
 }
 }, {
 quickReplyButton: {
-displayText: 'Bot Status 🚀',
+displayText: 'velocidad🚀',
 id: 'ping'
 }
 }, {
 quickReplyButton: {
-displayText: 'Menu 🐰',
+displayText: 'Menu 🔰',
 id: 'menu'
 }  
 }, {
@@ -3229,19 +3230,19 @@ displayText: 'Owner 😈',
 id: 'owner'
 }
 }]
-let txt = `*「 ${global.ownername}'s Broadcast」*\n\n${text}`
+let txt = `*「 ${global.ownername}'s difuncion」*\n\n${text}`
 XeonBotInc.send5ButImg(i, txt, `${global.botname}`, log0, btn, thum)
 }
-replay(`Successfully Sent Broadcast To ${anu.length} Group`)
+replay(`difuncion enviada al todos los chat el ${anu.length * 1.5} segundos,  el {anu.length} grupos`)
 }
 break
 case 'bc': case 'broadcast': case 'bcall': {
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 if (!isCreator) return replay(mess.owner)
-if (!args.join(" ")) return replay(`Where is the text??\n\nExample : ${prefix + command} ${global.ownername}`)
+if (!args.join(" ")) return replay(`y el texto?\n\nEjemplo : ${prefix + command} ${global.ownername}`)
 let anu = await store.chats.all().map(v => v.id)
-replay(`Send Broadcast To ${anu.length} Chat\nTime's up ${anu.length * 1.5} second`)
+replay(`enviado mensaje de difusión al ${anu.length} todos los Chat`)
 for (let yoi of anu) {
 await sleep(1500)
 let btn = [{
@@ -3251,17 +3252,17 @@ url: `${global.websitex}`
 }
 }, {
 urlButton: {
-displayText: 'Script 🍜',
+displayText: 'Sc 🤖',
 url: `${global.botscript}`
 }
 }, {
 quickReplyButton: {
-displayText: 'Bot Status 🚀',
+displayText: 'velocidad 🚀',
 id: 'ping'
 }
 }, {
 quickReplyButton: {
-displayText: 'Menu 🐰',
+displayText: 'Menu 🔰',
 id: 'menu'
 }  
 }, {
@@ -3270,20 +3271,20 @@ displayText: 'Owner 😈',
 id: 'owner'
 }
 }]
-let txt = `*「 ${global.ownername}'s Broadcast」*\n\n${text}`
+let txt = `*「 ${global.ownername}'s difuncion del chat general 」*\n\n${text}`
 XeonBotInc.send5ButImg(yoi, txt, `${global.botname}`, log0, btn, thum)
 }
-replay('Broadcast Success')
+replay('difuncion enviada con exito, el {anu.length * 1.5} segundos,  el ${anu.length} todos los chat')
 }
 break
  case 'bcimage': case 'bcvideo': case 'bcaudio': {
                   if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 if (!isCreator) return replay(mess.owner)
-                if (!/video/.test(mime) && !/image/.test(mime) && !/audio/.test(mime)) return reply(`*Send/Reply Video/Audio/Image You Want to Broadcast With Caption* ${prefix + command}`)
+                if (!/video/.test(mime) && !/image/.test(mime) && !/audio/.test(mime)) return reply(`*Send/Reply Video/Audio/Image qie desea transmitir con subtitulos * ${prefix + command}`)
                 let anu = await store.chats.all().map(v => v.id)
                 let ftroli ={key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "916909137213-1604595598@g.us"}, "message": {orderMessage: {itemCount: 999999999,status: 200, thumbnail: fs.readFileSync('./media/theme/cheemspic.jpg'), surface: 200, message: `${ownername}'s Broadcast`, orderTitle: `${botname}`, sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
-                reply(`*Send Broadcast To* ${anu.length} *Group Chat, Time ${anu.length * 1.5} secs*`)
+                reply(`*enviado mensajes de difusión* ${anu.length} al todos los chat`)
                 for (let i of anu) {
                     await sleep(1500)
                     let butoon = [{
@@ -3293,17 +3294,17 @@ url: `${global.websitex}`
                                 }
                             }, {
 urlButton: {
-displayText: 'Script 🍜',
+displayText: 'Script 🤖',
 url: `${global.botscript}`
 }
 }, {
 quickReplyButton: {
-displayText: 'Bot Status 🚀',
+displayText: 'velocidad 🚀',
 id: 'ping'
 }
 }, {
 quickReplyButton: {
-displayText: 'Menu 🐰',
+displayText: 'Menu 🔰',
 id: 'menu'
 }  
 }, {
@@ -3317,19 +3318,19 @@ id: 'owner'
                     if (/webp/.test(mime)) {
                     XeonBotInc.sendMessage(i, { sticker: { url: media } }, { quoted: ftroli })
                     } else if (/image/.test(mime)) {
-                    let DGXeon = `*「 ${global.ownername}'s Broadcast」*${text ? '\n\n' + text : ''}`
+                    let DGXeon = `*「 ${global.ownername}'s difuncion envia desde el chat genera」*${text ? '\n\n' + text : ''}`
                     XeonBotInc.send5ButImg(i, DGXeon, `${global.botname}`, buffer, butoon)
                     } else if (/video/.test(mime)) {
-                    let DGXeon = `*「 ${global.ownername}'s Broadcast」*${text ? '\n\n' + text : ''}`
+                    let DGXeon = `*「 ${global.ownername}'s difuncion enviada desde el chat general」*${text ? '\n\n' + text : ''}`
                     XeonBotInc.sendMessage(i, {video: buffer, caption: `${DGXeon}`}, { quoted: ftroli })
                     } else if (/audio/.test(mime)) {
                     XeonBotInc.sendMessage(i, {audio: buffer, mimetype: 'audio/mpeg'}, { quoted : ftroli })
                     } else {
-                    reply(`*Send/Reply Video/Audio/Image You Want to Broadcast With Caption* ${prefix + command}`)
+                    reply(`*Send/Reply Video/Audio/Image que desea transmitir* ${prefix + command}`)
                     }
                     await fs.unlinkSync(media)
                     }
-                reply(` *Send Broadcast To* ${anu.length} *Chats*`)
+                reply(`difuncion enviada el ${anu.length * 1.5} segundos, al ${anu.length} todos los chat`)
             }
             break
 case 'bcloc': {
