@@ -33,11 +33,10 @@
 [![blog](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)
 ](https://youtube.com/channel/UC9b3UIVnVb5eQt7_Y-Qz-3A)  <img src="https://github.com/siegrin/siegrin/blob/main/Assets/powerup.gif" height="29px">
    
-<p align="center">
+<p align="left">
 <a href="https://github.com/NeKosmic-NK"><img src="http://readme-typing-svg.herokuapp.com?font=mono&size=14&duration=3000&color=ABF7BB&left=verdadero&vLeft=verdadero&lines=Te+gustar%C3%ADa+tener+un+BOT+activo+24/7?" height="40px"
 </p>
-   
-  <p align="hihg">   
+     <p align="hihg">   
 <a href="https://portal.acidicnodes.com" target="_blank"> <img src="https://img.shields.io/badge/-AcidicNodes-%23E4405F?style=for-the-badge&logo=acidicnodes&logoColor=black" target="_blank"></a> <img src="https://github.com/siegrin/siegrin/blob/main/Assets/Handshake.gif" height="30px">
  
    -----
