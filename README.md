@@ -10,7 +10,7 @@
 <a href="https://github.com/NeKosmic-NK"><img src="http://readme-typing-svg.herokuapp.com?font=mono&size=14&duration=3000&color=ABF7BB&center=verdadero&vCenter=verdadero&lines=Solo+escr%C3%ADba+si+tiene+dudas." height="40px"
 </p>
     
-    <a href="http://wa.me/56977774748" target="blank"><img src="https://img.shields.io/badge/Creador-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
+<a href="http://wa.me/56977774748" target="blank"><img src="https://img.shields.io/badge/Creador-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
 <a href="http://wa.me/34623442554" target="blank"><img src="https://img.shields.io/badge/NeKosmic_NK-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
 <a href="http://wa.me/51935116539" target="blank"><img src="https://img.shields.io/badge/Misael-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
 > NO BOT
