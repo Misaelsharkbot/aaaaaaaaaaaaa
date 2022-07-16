@@ -9,6 +9,7 @@
 <p align="center">
 <a href="https://github.com/NeKosmic-NK"><img src="http://readme-typing-svg.herokuapp.com?font=mono&size=14&duration=3000&color=ABF7BB&center=verdadero&vCenter=verdadero&lines=Solo+escr%C3%ADba+si+tiene+dudas." height="40px"
 </p>
+  
 <a href="https://wa.me/56977774748"><img src="https://img.shields.io/badge/Contacto creador-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 
 <a href="https://wa.me/51935116539"><img src="https://img.shields.io/badge/Contacto desarrollo-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
