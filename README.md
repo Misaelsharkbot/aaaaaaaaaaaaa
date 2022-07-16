@@ -75,7 +75,7 @@ pkg install nodejs -y
 pkg install ffmpeg -y 
 pkg install wget
 pkg install imagemagick -y
-git clone https://github.com/DGXeon/CheemsBot-MD4
+git clone https://github.com/elrebelde21/pruebabot
 cd pruebabot
 npm start
 ```
@@ -87,7 +87,7 @@ apt apt install ffmpeg
 apt apt install libwebp 
 apt apt install imagrmagick
 apt install bash
-git clone https://github.com/DGXeon/CheemsBot-MD4
+git clone https://github.com/elrebelde21/pruebabot
 cd pruebabot 
 npm start
 ```
