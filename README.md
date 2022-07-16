@@ -1,5 +1,7 @@
-Bot nuevo el desarrollo 
-
+# `👑BOT en desarrollo👑`
+<p align="center"> 
+  <a href="https://github.com/NeKosmic-NK"><img src="http://readme-typing-svg.herokuapp.com?font=mono&size=17&duration=4000&color=F7B11B&center=falso&vCenter=falso&lines=PRUEBA-BOT-MD++%F0%9F%90%88;Gracias+por+visitar+este+repositorio.+%F0%9F%92%96" height="90px"
+</p>
 
 -------
 
@@ -17,6 +19,9 @@ Bot nuevo el desarrollo
 </p>
 
 ## ```grupos```
+<p align="center">
+<a href="https://github.com/NeKosmic-NK"><img src="http://readme-typing-svg.herokuapp.com?font=mono&size=14&duration=3000&color=ABF7BB&center=verdadero&vCenter=verdadero&lines=Solo+escr%C3%ADba+si+tiene+dudas." height="40px"
+</p>
 
 - [`1st GC`](https://chat.whatsapp.com/Byyrc8RJnUkJw6vvUgsbDF)
 
