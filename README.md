@@ -95,6 +95,12 @@ npm start
 ```bash
 npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs
 ```
-# `👑Colaborador 1👑`
+# `👑Colaboradores👑`
 
 [![NeKosmic-NK](https://github.com/NeKosmic-NK.png?size=100)](https://github.com/NeKosmic-NK) 
+  
+# `👑Creador del BOT👑`
+  
+  [![elrebelde21](https://github.com/elrebelde21.png?size=100)](https://github.com/elrebelde21) 
+  
+  
