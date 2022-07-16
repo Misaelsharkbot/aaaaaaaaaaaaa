@@ -16,7 +16,7 @@
 > NO BOT
   
 [![blog](https://img.shields.io/badge/Grupo-Soporte-25D366?style=for-the-badge&logo=whatsapp&logoColor=white 
-)](https://chat.whatsapp.com/EOJQxQRVlIR0Wd4HSQZl58)  <a href="https://chat.whatsapp.com/Byyrc8RJnUkJw6vvUgsbDF"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px"></a>
+)](https://chat.whatsapp.com/Byyrc8RJnUkJw6vvUgsbDF)  <a href="https://chat.whatsapp.com/Byyrc8RJnUkJw6vvUgsbDF"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px"></a>
 
  <p align="hihg">   
 <a href="https://t.me/+jDafTNrAOmQ5MGEx" target="_blank"> <img src="https://img.shields.io/badge/-Telegram-%23E4405F?style=for-the-badge&logo=telegram&logoColor=blue" target="_blank"></a> <img src="https://github.com/siegrin/siegrin/blob/main/Assets/Handshake.gif" height="30px">
@@ -32,11 +32,9 @@
 
 [![blog](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)
 ](https://youtube.com/channel/UC9b3UIVnVb5eQt7_Y-Qz-3A)  <img src="https://github.com/siegrin/siegrin/blob/main/Assets/powerup.gif" height="29px">
-
-## ```grupos```
-
-- [`1st GC`](https://chat.whatsapp.com/Byyrc8RJnUkJw6vvUgsbDF)
-
+ 
+   -----
+   
 ## clona el reposito aqui 👇
 
 - FORK THE REPOSITORY [Here](https://github.com/DGXeon/CheemsBot-MD4/fork)
