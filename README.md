@@ -98,6 +98,7 @@ npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs
 # `👑Colaboradores👑`
 
 [![NeKosmic-NK](https://github.com/NeKosmic-NK.png?size=100)](https://github.com/NeKosmic-NK) 
+[![Misaelsharkbot](https://github.com/Misaelsharkbot.png?size=100)](https://github.com/Misaelsharkbot)  
   
 # `👑Creador del BOT👑`
   
