@@ -46,15 +46,15 @@ global.location = "argentina" //lugar
 //__________________
 global.vcardowner1 = ['51935116539'] //número
 global.ownername1 = "desarrollo" //nombre
-global.ytname1 = "YT: loli" //canal YouTube
+global.ytname1 = "" //canal YouTube
 global.socialm1 = "GitHub: " //gitbut 
 global.location1 = "peru" //lugar
 //__________________
 global.vcardowner2 = ['34623442554'] //numero
 global.ownername2 = "desarrollo" //nombre
-global.ytname2 = "YT: loli" //canal de Youtube 
+global.ytname2 = "" //canal de Youtube 
 global.socialm2 = "GitHub: " //gitbut 
-global.location2 = "argentina" //lugar
+global.location2 = "españa" //lugar
 
 //bot bomdy 
 global.owner = ['56977774748' , '51935116539']
@@ -75,7 +75,7 @@ global.err4r = fs.readFileSync("./media/theme/cheemspic.jpg") //ur error pic
 global.thumb = fs.readFileSync("./media/theme/cheemspic.jpg") //ur thumb pic
 
 //damtabase
-global.premium = ['916909137213'] //ur premium numbers
+global.premium = ['573224618996'] //ur premium numbers
 global.ntilinkytvid = []
 global.ntilinkytch = []
 global.ntilinkig = []
