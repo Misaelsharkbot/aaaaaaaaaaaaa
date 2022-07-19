@@ -8067,8 +8067,8 @@ let search = await yts(text)
 let anu = search.videos[Math.floor(Math.random() * search.videos.length)]
 let ytvc = await hx.youtube(anu.url)
 let buttons = [
-{buttonId: `ytvd ${ytvc.link}`, buttonText: {displayText: 'Video'}, type: 1},
-{buttonId: `ytad ${ytvc.mp3}`, buttonText: {displayText: 'Audio'}, type: 1}
+{buttonId: `${prefix}ytmp5 ${anu.url} `, buttonText: {displayText: 'Video'}, type: 1},
+{buttonId: `${prefix}audio ${anu.url}`, buttonText: {displayText: 'Audio'}, type: 1}
 ]
 let buttonMessage = {
 image: { url: anu.thumbnail },
@@ -8101,70 +8101,9 @@ XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
 }
 break
 //----DOWNLOAD FEATURES---\\
-case 'play2':  {   
-if  (!text) reply('ejemplo: play Bad Bunny ')
-let yts = require("yt-search")
-drips2 = await yts(text)
-aramat = drips2.all 
-var mulaikah = aramat[0].url
-try {
-xa.Youtube(mulaikah).then(async (data) => {
-const captions = `
-▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
-    ⟮ _*◉ʏᴏᴜᴛᴜʙᴇ ᴍᴜꜱɪᴄ◉*_ ⟯ 
-   
-0.02━◉━━━━━━━━━━━━3.26
-      🔂   ⏪   ⏸️     ⏩  🎵
-
-*💎Tɪᴛulo :* ${drips2.videos[0].title}
-*💎peso :* ${data.medias[7].formattedSize}
-*💎Dᴇꜱᴄʀɪcion :* ${drips2.videos[0].description}`
-message = await prepareWAMessageMedia({ image : { url: drips2.videos[0].thumbnail } }, { upload:   ZimBotInc.waUploadToServer })
-const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
-templateMessage: {
-hydratedTemplate: {
-hydratedContentText: captions,
-imageMessage: message.imageMessage,
-hydratedFooterText: `${botname}`,
-hydratedButtons: [{
-urlButton: {
-displayText: 'YOUTUBE',
-url: `${drips2.videos[0].url}`
-}
-}, {
-urlButton: {
-displayText: `GITHUB`, 
-url: `https://github.com/`
-}
-}, {
-quickReplyButton: {
-displayText: `VIDEO`,
-id: `${prefix}ytmp4 ${drips2.videos[0].url}`
-}
-}, {
-quickReplyButton: {
-displayText: `AUDIO`,
-id: `${prefix}ytmp3 ${drips2.videos[0].url}`
-}
-}, {
-quickReplyButton: {
-displayText: `YTSEARCH`,
-id: `${prefix}ytsearch ${drips2.videos[0].title}`
-}
-}]
-}
-}
-}), { userJid: m.chat })
-ZimBotInc.relayMessage(m.chat, template.message, { messageId: template.key.id })
-})
-} catch (err) {
-reply('*uff ocurrió un erro intente de nuevo*')
-}
-}
-break
-case 'play4': {
+case 'play2': {
 let { yta } = require('./lib/y2mate')
-if (!text)  reply(`ejemplo : ${prefix + command} story wa anime`)
+if (!text)  reply(`ejemplo : ${prefix + command} bad bunny`)
 let yts = require("yt-search")
 let search = await yts(text)
 let anu = search.videos[Math.floor(Math.random() * search.videos.length)]
@@ -8200,7 +8139,7 @@ url: `https://github.com/`
 }, {
 quickReplyButton: {
 displayText: `VIDEO`,
-id: `${prefix}ytmp4 ${anu.url}`
+id: `${prefix}ytmp5 ${anu.url}`
 }
 }, {
 quickReplyButton: {
@@ -8219,7 +8158,67 @@ id: `${prefix}audio ${anu.url}`
 }), { userJid: m.chat })
 XeonBotInc.relayMessage(m.chat, template.message, { messageId: template.key.id })
 }
+break
+case 'play4':  {   
+if  (!text) reply('ejemplo : story wa anime ')
+let yts = require("yt-search")
+drips2 = await yts(text)
+aramat = drips2.all 
+var mulaikah = aramat[0].url
+try {
+xa.Youtube(mulaikah).then(async (data) => {
+const captions = `
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+    ⟮ _*💎ʏᴏᴜᴛᴜʙᴇ ᴍᴜꜱɪᴄ💎*_ ⟯ 
+   
+0.02━◉━━━━━━━━━━━━3.26
+      🔂   ⏪   ⏸️     ⏩  🎵
 
+*💎Tɪᴛulo :* ${drips2.videos[0].title}
+*💎peso :* ${data.medias[7].formattedSize}
+*💎Dᴇꜱᴄʀɪcion :* ${drips2.videos[0].description}`
+message = await prepareWAMessageMedia({ image : { url: drips2.videos[0].thumbnail } }, { upload:   XeonBotInc.waUploadToServer })
+const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+templateMessage: {
+hydratedTemplate: {
+hydratedContentText: captions,
+imageMessage: message.imageMessage,
+hydratedFooterText: `${botname}`,
+hydratedButtons: [{
+urlButton: {
+displayText: 'YOUTUBE',
+url: `${drips2.videos[0].url}`
+}
+}, {
+urlButton: {
+displayText: `GITHUB`, 
+url: `https://github.com/`
+}
+}, {
+quickReplyButton: {
+displayText: `VIDEO`,
+id: `${prefix}ytmp4 ${drips2.videos[0].url}`
+}
+}, {
+quickReplyButton: {
+displayText: `AUDIO`,
+id: `${prefix}ytmp3 ${drips2.videos[0].url}`
+}
+}, {
+quickReplyButton: {
+displayText: `YTSEARCH`,
+id: `${prefix}ytsearch ${drips2.videos[0].title}`
+}
+}]
+}
+}
+}), { userJid: m.chat })
+XeonBotInc.sendMessage(m.chat, template.message, { messageId: template.key.id })
+})
+} catch (err) {
+reply('*uff ocurrió un erro intente de nuevo*')
+}
+}
 break
 case 'getmusic': case 'getvideo': case 'yt': case 'youtube': case 'ytvideo': case 'ytmp3': case 'ytmp4': case 'ytmusic': {
    if (isBan) return reply(mess.ban)	 			
@@ -8268,15 +8267,14 @@ let quality = args[1] ? args[1] : '128kbps'
 let media = await yta(text, quality)
 if (media.filesize >= 100000) return m.reply('*no tiene limitet* '+util.format(media))
 let caption = `
-▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
-    ⟮ _*💎ʏᴏᴜᴛᴜʙᴇ ᴅᴏᴡɴʟᴏᴀᴅ💎*_ ⟯ 
+    ⟮ _*💎ʏᴏᴜᴛᴜʙᴇ descarga💎*_ ⟯ 
    
 0.02━◉━━━━━━━━━━━━3.26
-      🔂   ⏪   ⏸️     ⏩  🎵\n\n*💎TITULO :* ${media.title}\n*💎PESO :* ${media.filesizeF}\n*💎URL :* ${isUrl(text)}\n*💎EXT :* MP3\n*💎RESOLUTION :* ${args[1] || '128kbps'}\n\n*pruebabot*`
+      🔂   ⏪   ⏸️     ⏩  🎵\n\n*💎TITULO :* ${media.title}\n*💎PESO :* ${media.filesizeF}\n*💎URL :* ${isUrl(text)}\n*💎EXT :* MP3\n*💎RESOLUTION :* ${args[1] || '128kbps'}\n\n*espere un momento*`
 buf = await getBuffer(media.thumb)
 XeonBotInc.sendMessage(m.chat, { image: { url: media.thumb }, jpegThumbnail:buf, caption: `${caption}` }, { quoted: m }).catch((err) => m.reply('*erro, intente de nuevo*'))   
 XeonBotInc.sendMessage(m.chat, {document:{url:media.dl_link}, mimetype:"audio/mpeg", fileName: `${media.title}.mp3`,  quoted: m, contextInfo: { externalAdReply:{
-title:"botprueba",
+title:"dj bot",
 body:"Superbot-MD",
 showAdAttribution: true,
 mediaType:2,
@@ -8285,23 +8283,22 @@ mediaUrl:`https://youtu.be/KNu-gr2h7bo`,
 sourceUrl: `https://youtu.be/KNu-gr2h7bo` }}}, {quoted: m})
 }
 break
-case 'ytmp4': case 'ytvideo': {
+case 'ytmp5': case 'ytvideo': {
 let { ytv } = require('./lib/y2mate')
-if (!text) throw `Example : ${prefix + command} https://youtube.com/watch?v=PtFMh6Tccag%27 360p`
+if (!text) throw `Ejemplo : ${prefix + command} https://youtube.com/watch?v=PtFMh6Tccag%27 360p`
 if (!isUrl(args[0]) && !args[0].includes('youtube.com')) throw '*erro, intente de nuevo*'
 let quality = args[1] ? args[1] : '360p'
 let media = await ytv(text, quality)
 if (media.filesize >= 100000) return m.reply('*File Over Limit* '+util.format(media))
 var capti = `
-▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
-    ⟮ _*💎ʏᴏᴜᴛᴜʙᴇ ᴅᴏᴡɴʟᴏᴀᴅ💎*_ ⟯ 
+    ⟮ _*💎ʏᴏᴜᴛᴜʙᴇ descarga💎*_ ⟯ 
    
 0.02━◉━━━━━━━━━━━━3.26
-      🔂   ⏪   ⏸️     ⏩  🎵\n\n*💎Titulo* : ${media.title}\n*💎peso* : ${media.filesizeF}\n*◉URL* : ${isUrl(text)}\n*💎EXT* : MP3\n*💎RESOLUTION* : ${args[1] || '360p'}\n\n*espere un momento*`
+      🔂   ⏪   ⏸️     ⏩  🎵\n\n*💎Titulo* : ${media.title}\n*💎peso* : ${media.filesizeF}\n*💎EXT* : MP3\n💎URL : ${isUrl(text)}\n\n\n*espere un momento*`
 var buf = await getBuffer(media.thumb)
 XeonBotInc.sendMessage(m.chat, { image: { url: media.thumb }, jpegThumbnail:buf, caption: `${capti}` }, { quoted: m })
-XeonBotInc.sendMessage(m.chat, { video: { url: media.dl_link }, jpegThumbnail:buf, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `*Downloading From ${text}*` ,  quoted: m,contextInfo: { externalAdReply:{
-title:"pruebabot",
+XeonBotInc.sendMessage(m.chat, { video: { url: media.dl_link }, jpegThumbnail:buf, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `*aqui tiene🔰*` ,  quoted: m,contextInfo: { externalAdReply:{
+title:"dj bot",
 body:"DRIPS",
 showAdAttribution: true,
 mediaType:2,
@@ -8318,14 +8315,14 @@ let quality = args[1] ? args[1] : '128kbps'
 let media = await yta(text, quality)
 if (media.filesize >= 100000) return m.reply('*File Over Limit* '+util.format(media))
 let caption = `
-    ⟮ _*💎ʏᴏᴜᴛᴜʙᴇ ᴅᴏᴡɴʟᴏᴀᴅ💎*_ ⟯ 
+    ⟮ _*💎ʏᴏᴜᴛᴜʙᴇ descarga💎*_ ⟯ 
    
 0.02━◉━━━━━━━━━━━━3.26
-      🔂   ⏪   ⏸️     ⏩  🎵*\n\n*💎TITULO :* ${media.title}\n*💎peso :* ${media.filesizeF}\n*💎URL :* ${isUrl(text)}\n*💎EXT :* MP3\n*💎RESOLUTION :* ${args[1] || '128kbps'}\n\n*espere un momento*`
+      🔂   ⏪   ⏸️     ⏩  🎵*\n\n*💎TITULO :* ${media.title}\n*💎peso :* ${media.filesizeF}\n*💎EXT :* MP3\n*💎URL :* ${isUrl(text)}\n*espere un momento*`
 buf = await getBuffer(media.thumb)
 XeonBotInc.sendMessage(m.chat, { image: { url: media.thumb }, jpegThumbnail:buf, caption: `${caption}` }, { quoted: m }).catch((err) => m.reply('*erro, intente de nuevo*'))   
 XeonBotInc.sendMessage(m.chat, {audio:{url:media.dl_link}, mimetype:"audio/mpeg", fileName: `${media.title}.mp3`,  quoted: m, contextInfo: { externalAdReply:{
-title:"pruebabot",
+title:"dj bot",
 body:"DRIPS",
 showAdAttribution: true,
 mediaType:2,
@@ -8364,7 +8361,7 @@ break
             	if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
                 if (!text) return reply(mess.linkm)
-                if (!isUrl(args[0]) && !args[0].includes('youtube.com')) return reply(`The link you provided is invalid`)
+                if (!isUrl(args[0]) && !args[0].includes('youtube.com')) return reply(`invalido`)
                 anu = await fetchJson(`https://api.akuari.my.id/downloader/youtube?link=${text}`)        
                 if (anu.filesize_video >= 999999) return reply('*el archivo es muy pesado imposible de descarga* '+util.format(anu))
                 tummb = await getBuffer(anu.thumb)
@@ -8377,7 +8374,7 @@ case 'ytshorts': case 'shorts': {
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
   if (!text) return reply(`*Use ${prefix + command} put yt shorts link*`)
-  if (!isUrl(args[0]) && !args[0].includes('youtube')) return reply(`The link you provided is not valid`)
+  if (!isUrl(args[0]) && !args[0].includes('youtube')) return reply(`invalido`)
   xeonkey.Youtube(`${text}`).then(async (data) => {
   if (data.medias[0].formattedSize.split('MB')[0] >= 999) return reply('*el archivo es muy pesado imposible de descarga* '+util.format(data)) 
   cap = `
@@ -8424,20 +8421,30 @@ reply("Error")
 }
 }
 break
-case 'mediafire': {
-	if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-if (!text) return reply(mess.linkm)
-if (!isUrl(args[0]) && !args[0].includes('mediafire.com')) return reply(`The link you provided is invalid`)
+case 'mediafire': {  
+reply(mess.wait)         
+if (!text) throw '*y el link!*'
+if (!isUrl(args[0]) && !args[0].includes('mediafire.com')) throw '*erro.intente de nuevo*'
 const baby1 = await mediafireDl(text)
-if (baby1[0].size.split('MB')[0] >= 999) return reply('*el archivo es muy pesado imposible de descarga* '+util.format(baby1))
-const result4 = `*MEDIAFIRE DESCARGA*
-				
-*Nombre* : ${baby1[0].nama}
-*peso* : ${baby1[0].size}
-*Link* : ${baby1[0].link}`
+if (baby1[0].size.split('MB')[0] >= 100) return m.reply('*File Over Limit* '+util.format(baby1))
+const result4 = `
+    ⟮ _*◉Mᴇᴅɪᴀꜰɪʀᴇ descarga◉*_ ⟯ 
+          
+*NOMBRE* : ${baby1[0].nama}
+*PESO* : ${baby1[0].size}
+*LINK* : ${baby1[0].link}\n
+
+ _espere un momento...._ 
+*${botname}*`
 reply(`${result4}`)
-XeonBotInc.sendMessage(m.chat, { document : { url : baby1[0].link}, fileName : baby1[0].nama, mimetype: baby1[0].mime }, { quoted : m }).catch ((err) => reply(mess.error))
+XeonBotInc.sendMessage(m.chat, { document : { url : baby1[0].link}, fileName : baby1[0].nama, mimetype: baby1[0].mime ,  quoted : mudratunha, contextInfo: { externalAdReply:{
+  title:"pruebabot",
+  body:"Superbot-MD",
+  showAdAttribution: true,
+  mediaType:2,
+  thumbnail: fs.readFileSync(`./drips.jpg`) ,
+  mediaUrl:`https://youtu.be/KNu-gr2h7bo`, 
+sourceUrl: `https://youtu.be/KNu-gr2h7bo` }}}, {quoted: m})
 }
 break
             case 'umma': case 'ummadl': {
@@ -8906,7 +8913,6 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                 XeonBotInc.sendContact(m.chat, global.vcardowner, m)
                 XeonBotInc.sendContact(m.chat, global.vcardowner1, m)
                 XeonBotInc.sendContact(m.chat, global.vcardowner2, m)
-                
             }
             break
   case 'setmenu': {
@@ -8965,7 +8971,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                 XeonBotInc.sendListMsg(m.chat, `selecione aqui para cambia de menu!`, ` `, XeonBotInc.user.name, `selecione aqui`, sections, m)
                 }
             }
-            break
+/*           break
 case 'request': {
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
@@ -8978,15 +8984,18 @@ XeonBotInc.sendMessage(i + "@s.whatsapp.net", {text: teks + teks1, mentions:[m.s
 }
 XeonBotInc.sendMessage(m.chat, {text: teks + teks2 + teks1, mentions:[m.sender]}, {quoted:m})
 }
+*/
 break
-                    case 'bug': case 'report': {
-                    	if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-                    	if(!text) return reply(`\n\nEjemplo: ${command} Menu Error`)
-                    	XeonBotInc.sendMessage(`${owner}@s.whatsapp.net`, {text: `*reporte:* wa.me/${m.sender.split("@")[0]}
-mensaje: ${text}` })
-reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, If You Play With This, Use This Feature Again And Again For No Reason, You Will Be Blocked For Sure !`)
-                    }
+                    case 'report': {
+    if (!args.join(" ")) return m.reply(`Ejemplo : \n- ${prefix + command} no funciona los stickers\n- ${prefix + command} no funciona los stickers`)
+    teks = `*▊▊▊REPORTE ▊▊▊*`
+    teks1 = `\n\nNUMERO : @${m.sender.split("@")[0]}\n*REPORTE :* ${args.join(" ")}`
+    teks2 = `\n\nexito  enviado a mi Propietario`
+    for (let i of owner) {
+    XeonBotInc.sendMessage(i + "@s.whatsapp.net", {text: teks + teks1, mentions:[m.sender]}, {quoted:m})
+    }
+    XeonBotInc.sendMessage(m.chat, {text: teks + teks2 + teks1, mentions:[m.sender]}, {quoted:m})
+    }
                     break
 case 'sc': case 'script': case 'donate': case 'donate': case 'cekupdate': case 'updatebot': case 'cekbot': case 'sourcecode': {
 	if (isBan) return reply(mess.ban)	 			
