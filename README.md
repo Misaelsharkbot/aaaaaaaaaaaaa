@@ -74,7 +74,7 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 * Any text editor
 ## `Clone Repo & Installation dependencies`
 ```bash
-git clone https://github.com/DGXeon/CheemsBot-MD4.git
+git clone https://github.com/elrebelde21/pruebabot
 cd pruebabot
 
 npm start
