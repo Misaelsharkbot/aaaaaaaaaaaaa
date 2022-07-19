@@ -188,7 +188,9 @@ sourceUrl: `${websitex}`,
 mediaUrl: `${websitex}`
 }}
 }
-XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
+linkft = ['https://i.ibb.co/dLssy8x/Confulogo.jpg']
+       let lppgcc = { url : linkft }
+cnf.send5ButImg(anu.id, `${textbody}`, `𝐂𝐨𝐧𝐟𝐮𝐁𝐨𝐭-𝐌𝐃5 𝐁𝐲 𝐂𝐨𝐧𝐟𝐮✨`, lppgcc, [])
                 } else if (anu.action == 'remove') {
                 	const xeonbuffer = await getBuffer(ppuser)
                     const xeontime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
@@ -227,14 +229,16 @@ sourceUrl: `${websitex}`,
 mediaUrl: `${websitex}`
 }}
 }
-XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
+linkft = ['https://i.ibb.co/dLssy8x/Confulogo.jpg']
+       let lppgcc = { url : linkft }
+cnf.send5ButImg(anu.id, `${textbody}`, `𝐂𝐨𝐧𝐟𝐮𝐁𝐨𝐭-𝐌𝐃5 𝐁𝐲 𝐂𝐨𝐧𝐟𝐮✨`, lppgcc, [])
                 }
             }
         } catch (err) {
             console.log(err)
         }
     })
-	
+
     //Setting\\
     XeonBotInc.decodeJid = (jid) => {
         if (!jid) return jid
