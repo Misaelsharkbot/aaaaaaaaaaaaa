@@ -149,6 +149,7 @@ let docs = pickRandom(documents)
 memb = metadata.participants.length
 XeonWlcm = await getBuffer(`https://hardianto.xyz/api/welcome3?profile=${encodeURIComponent(ppuser)}&name=${encodeURIComponent(nama)}&bg=https://telegra.ph/file/d460e086f9f9bf6b04e17.jpg&namegb=${encodeURIComponent(metadata.subject)}&member=${encodeURIComponent(memb)}`)
 XeonLft = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeURIComponent(ppuser)}&name=${encodeURIComponent(nama)}&bg=https://telegra.ph/file/d460e086f9f9bf6b04e17.jpg&namegb=${encodeURIComponent(metadata.subject)}&member=${encodeURIComponent(memb)}`)
+               .if (anu.action == "add" && mem.includes(XeonBotInc.user.jid)) 
                 if (anu.action == 'add') {
                 const xeonbuffer = await getBuffer(ppuser)
                 let xeonName = num
@@ -188,9 +189,7 @@ sourceUrl: `${websitex}`,
 mediaUrl: `${websitex}`
 }}
 }
-linkft = ['https://i.ibb.co/dLssy8x/Confulogo.jpg']
-       let lppgcc = { url : linkft }
-cnf.send5ButImg(anu.id, `${textbody}`, `𝐂𝐨𝐧𝐟𝐮𝐁𝐨𝐭-𝐌𝐃5 𝐁𝐲 𝐂𝐨𝐧𝐟𝐮✨`, lppgcc, [])
+XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
                 } else if (anu.action == 'remove') {
                 	const xeonbuffer = await getBuffer(ppuser)
                     const xeontime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
@@ -229,9 +228,7 @@ sourceUrl: `${websitex}`,
 mediaUrl: `${websitex}`
 }}
 }
-linkft = ['https://i.ibb.co/dLssy8x/Confulogo.jpg']
-       let lppgcc = { url : linkft }
-cnf.send5ButImg(anu.id, `${textbody}`, `𝐂𝐨𝐧𝐟𝐮𝐁𝐨𝐭-𝐌𝐃5 𝐁𝐲 𝐂𝐨𝐧𝐟𝐮✨`, lppgcc, [])
+XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
                 }
             }
         } catch (err) {
