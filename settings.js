@@ -45,34 +45,34 @@ global.socialm = "GitHub: " //github
 global.location = "argentina" //lugar
 //__________________
 global.vcardowner1 = ['51935116539'] //número
-global.ownername1 = "desarrollo" //nombre
+global.ownername1 = "░▒▓█►─═ 𝑀𝐼𝒮𝒜𝐸𝐿 ═─◄█▓▒░" //nombre
 global.ytname1 = "" //canal YouTube
 global.socialm1 = "GitHub: " //gitbut 
-global.location1 = "peru" //lugar
+global.location1 = "Peru" //lugar
 //__________________
-global.vcardowner1 = ['5218992059110'] //número
-global.ownername1 = "desarrollo" //nombre
-global.ytname1 = "" //canal YouTube
-global.socialm1 = "GitHub: " //gitbut 
-global.location1 = "México" //lugar
-//__________________
-global.vcardowner2 = ['34623442554'] //numero
+global.vcardowner2 = ['5218992059110'] //número
 global.ownername2 = "desarrollo" //nombre
-global.ytname2 = "" //canal de Youtube 
+global.ytname2 = "" //canal YouTube
 global.socialm2 = "GitHub: " //gitbut 
-global.location2 = "españa" //lugar
+global.location2 = "México" //lugar
+//__________________
+global.vcardowner3 = ['34623442554'] //numero
+global.ownername3 = "desarrollo" //nombre
+global.ytname3 = "" //canal de Youtube 
+global.socialm3 = "GitHub: " //gitbut 
+global.location3 = "España" //lugar
 
 //bot bomdy 
 global.owner = ['56977774748' , '51935116539']
 global.ownertag = '447441419651' //ur tag number
-global.botname = 'pruebabot' //ur bot name
+global.botname = '𝓢𝓤𝓟𝓔𝓡𝓑𝓞𝓣-𝓜𝓓' //ur bot name
 global.linkz = "https://youtu.be/WiIqCdiDjFo" //your theme url which will be displayed on whatsapp
 global.websitex = "https://youtu.be" //ur website to be displayed
 global.botscript = 'https://github.com' //script link
 global.reactmoji = "😎" //ur menu react emoji
 global.themeemoji = "💎" //ur theme emoji
-global.packname = "toma tu sticker " //ur sticker watermark packname
-global.author = "Superbot-MD" //ur sticker watermark author
+global.packname = "𝘚𝘛𝘐𝘊𝘒𝘌𝘙  𝘉𝘠" //ur sticker watermark packname
+global.author = "𝓢𝓤𝓟𝓔𝓡𝓑𝓞𝓣-𝓜𝓓" //ur sticker watermark author
 
 //Bot theme media
 global.thum = fs.readFileSync("./media/theme/cheemspic.jpg") //ur thumb pic
