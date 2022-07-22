@@ -50,6 +50,12 @@ global.ytname1 = "" //canal YouTube
 global.socialm1 = "GitHub: " //gitbut 
 global.location1 = "peru" //lugar
 //__________________
+global.vcardowner1 = ['5218992059110'] //número
+global.ownername1 = "desarrollo" //nombre
+global.ytname1 = "" //canal YouTube
+global.socialm1 = "GitHub: " //gitbut 
+global.location1 = "México" //lugar
+//__________________
 global.vcardowner2 = ['34623442554'] //numero
 global.ownername2 = "desarrollo" //nombre
 global.ytname2 = "" //canal de Youtube 
