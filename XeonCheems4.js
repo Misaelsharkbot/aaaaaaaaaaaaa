@@ -1,7 +1,7 @@
 //════════════════════════════//
 //Si van a editar/agrega algo 
 //Por favor de
-//Deja crédito 
+//Deja crédito
 //════════════════════════════//
 
 require('./settings')
