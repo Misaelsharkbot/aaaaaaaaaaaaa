@@ -8114,10 +8114,10 @@ let caption = `
       0.02━◉━━━━━━━━━━━━3.26
           🔂   ⏪   ⏸️     ⏩  🎵
 
-*◉𝚃𝚒𝚝𝚞𝚕𝚘 :* ${anu.title}
-*◉𝙿𝚎𝚜𝚘 :* ${anu.filesize}
-*◉𝚄𝚁𝙻 :* ${anu.url}
-*◉𝙳𝚎𝚜𝚌𝚛𝚒𝚙𝚌𝚒𝚘𝚗 :* ${anu.description}
+*◉ 𝚃𝚒𝚝𝚞𝚕𝚘 :* ${anu.title}
+*◉ 𝙿𝚎𝚜𝚘 :* ${anu.filesize}
+*◉ 𝚄𝚁𝙻 :* ${anu.url}
+*◉ 𝙳𝚎𝚜𝚌𝚛𝚒𝚙𝚌𝚒𝚘𝚗 :* ${anu.description}
 `
 message = await prepareWAMessageMedia({ image : { url: anu.thumbnail } }, { upload:   XeonBotInc.waUploadToServer })
 const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
@@ -8874,9 +8874,9 @@ break
                 neww = performance.now()
                 oldd = performance.now()
                 respon = `
-Respuesta el  ${latensi.toFixed(4)} _Second_ \n ${oldd - neww} _milisegundos_\n\nactivad : ${runtime(process.uptime())}
+𝚅𝚎𝚕𝚘𝚌𝚒𝚍𝚊𝚍 𝚍𝚎𝚕 𝚋𝚘𝚝:  ${latensi.toFixed(4)} _segundos_ \n ${oldd - neww} _milisegundos_\n\nactivad : ${runtime(process.uptime())}
 
-💻 Info Servidor
+💻 𝙸𝙼𝙵𝙾𝚁𝙼𝙰𝙲𝙸𝙾𝙽 𝙳𝙴𝙻 𝚂𝙴𝚁𝚅𝙸𝙳𝙾𝚁
 RAM: ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
 
 _NodeJS Memory Usaage_
