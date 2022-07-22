@@ -9043,27 +9043,27 @@ if (isBanChat) return reply(mess.banChat)
 XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key }})
 	                let btn = [{
                                 urlButton: {
-                                    displayText: 'YouTube 🍒',
+                                    displayText: '𝐘𝐎𝐔𝐓𝐔𝐁𝐄 🍒',
                                     url: `${websitex}`
                                 }
                             }, {
                                 callButton: {
-                                    displayText: 'Sc 🤖',
+                                    displayText: '𝐒𝐂𝐑𝐈𝐏𝐓 🤖',
                                     url: `${botscript}`
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'menu completo 🔰',
+                                    displayText: '𝙼𝙴𝙽𝚄 𝙲𝙾𝙼𝙿𝙻𝙴𝚃𝙾 🔰',
                                     id: 'allmenu'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Lista Menu 🔰',
+                                    displayText: '𝙻𝙸𝚂𝚃𝙰 𝙼𝙴𝙽𝚄 🔰',
                                     id: 'command'
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Owner 💎',
+                                    displayText: '𝙾𝚆𝙽𝙴𝚁 💎',
                                     id: 'owner'
                                 }
                             }]
@@ -9080,11 +9080,11 @@ XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key 
                         /////////XeonBotInc.send5ButMsg(m.chat, menulist, global.botname, btn)
                         } else if (setbot.templateDocument) {
                         let buttonmenu = [
-        	{ urlButton: { displayText: `YouTube 🍒`, url : `${websitex}` } },
-            { urlButton: { displayText: `Sc 🤖`, url: `${botscript}` } },
-            { quickReplyButton: { displayText: `menu completo 🔰`, id: 'allmenu'} },
-            { quickReplyButton: { displayText: `Lista Menu 🔰`, id: 'command'} },
-            { quickReplyButton: { displayText: `Owner 💎`, id: 'owner'} }
+        	{ urlButton: { displayText: `𝐘𝐎𝐔𝐓𝐔𝐁𝐄 🍒`, url : `${websitex}` } },
+            { urlButton: { displayText: `𝐒𝐂𝐑𝐈𝐏𝐓 🤖`, url: `${botscript}` } },
+            { quickReplyButton: { displayText: `𝙼𝙴𝙽𝚄 𝙲𝙾𝙼𝙿𝙻𝙴𝚃𝙾 🔰`, id: 'allmenu'} },
+            { quickReplyButton: { displayText: `𝙻𝙸𝚂𝚃𝙰 𝙼𝙴𝙽𝚄 🔰`, id: 'command'} },
+            { quickReplyButton: { displayText: `𝙾𝚆𝙽𝙴𝚁 💎`, id: 'owner'} }
         	]
         	XeonBotInc.sendMessage(m.chat, { caption: menulist, document: fs.readFileSync('./media/theme/cheems.xlsx'), mimetype: `${docs}`, fileName: `${ownername}`, templateButtons: buttonmenu, footer: `${botname}`, mentionedJid: [m.sender] })
                         }
@@ -9241,7 +9241,7 @@ case 'allmenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Menu Completo')
-await XeonBotInc.send5ButImg(from, `┌────「 menu completo 」	
+await XeonBotInc.send5ButImg(from, `┌────「 𝐌𝐄𝐍𝐔 𝐂𝐎𝐌𝐏𝐋𝐄𝐓𝐎」	
 ┊ 𝗛𝗼𝗹𝗮 ${pushname}
 ┊ 
 └───────────●
@@ -9626,8 +9626,8 @@ break
 case 'ownermenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
-var unicorn = await getBuffer(picak+'Owner Menu')
-await XeonBotInc.send5ButImg(from, `┌────「 OWNER 」
+var unicorn = await getBuffer(picak+'Owner')
+await XeonBotInc.send5ButImg(from, `┌────「 𝐎𝐖𝐍𝐄𝐑 」
 ┊ hola ${pushname}
 ┊
 └───────────●
@@ -9658,8 +9658,8 @@ break
 case 'groupmenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
-var unicorn = await getBuffer(picak+'Group Menu')
-await XeonBotInc.send5ButImg(from, `┌────「 GRUPO 」	
+var unicorn = await getBuffer(picak+'Grupo')
+await XeonBotInc.send5ButImg(from, `┌────「 𝐆𝐑𝐔𝐏𝐎 」	
 ┊ hola ${pushname}
 ┊
 └───────────●
@@ -9711,8 +9711,8 @@ break
 case 'rpgmenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
-var unicorn = await getBuffer(picak+'Rpg Menu')
-await XeonBotInc.send5ButImg(from, `┌────「 RPG 」
+var unicorn = await getBuffer(picak+'Rpg')
+await XeonBotInc.send5ButImg(from, `┌────「 𝐑𝐏𝐆 」
 ┊${prefix}hunt
 ┊${prefix}mine
 ┊${prefix}fish
@@ -9729,8 +9729,8 @@ break
 case 'makermenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
-var unicorn = await getBuffer(picak+'Maker Menu')
-await XeonBotInc.send5ButImg(from, `┌────「 MAKER 」
+var unicorn = await getBuffer(picak+'Maker')
+await XeonBotInc.send5ButImg(from, `┌────「 𝐌𝐀𝐊𝐄𝐑 」
 ┊ hola ${pushname}
 ┊
 └───────────●
@@ -9850,8 +9850,8 @@ break
 case 'downloadmenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
-var unicorn = await getBuffer(picak+'Download Menu')
-await XeonBotInc.send5ButImg(from, `┌────「 DESCARGA 」
+var unicorn = await getBuffer(picak+'Descargas')
+await XeonBotInc.send5ButImg(from, `┌────「 𝐃𝐄𝐒𝐂𝐀𝐑𝐆𝐀𝐒 」
 ┊ hola ${pushname}
 ┊
 └───────────●
@@ -9884,8 +9884,8 @@ break
 case 'searchmenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
-var unicorn = await getBuffer(picak+'Search Menu')
-await XeonBotInc.send5ButImg(from, `┌────「 SEARCH 」	
+var unicorn = await getBuffer(picak+'Search')
+await XeonBotInc.send5ButImg(from, `┌────「 𝐒𝐄𝐀𝐑𝐂𝐇 」	
 ┊ hola ${pushname}
 ┊
 └───────────●
@@ -9924,7 +9924,7 @@ case 'convertmenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Convert Menu')
-await XeonBotInc.send5ButImg(from, `┌────「 CONVERT 」
+await XeonBotInc.send5ButImg(from, `┌────「 𝐂𝐎𝐍𝐕𝐄𝐑𝐓 」
 ┊ hola ${pushname}
 ┊
 └───────────●
@@ -9965,8 +9965,8 @@ break
 case 'randomimagemenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
-var unicorn = await getBuffer(picak+'Random Image Menu')
-await XeonBotInc.send5ButImg(from, `┌────「 RANDOM IMG 」
+var unicorn = await getBuffer(picak+'Random Image')
+await XeonBotInc.send5ButImg(from, `┌────「 𝐑𝐀𝐍𝐃𝐎𝐌 𝐈𝐌𝐆 」
 ┊ hola ${pushname}
 ┊
 └───────────●
@@ -9992,8 +9992,8 @@ break
 case 'emotemenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
-var unicorn = await getBuffer(picak+'Emote Menu')
-await XeonBotInc.send5ButImg(from, `┌────「 EMOTE 」	
+var unicorn = await getBuffer(picak+'Emoji')
+await XeonBotInc.send5ButImg(from, `┌────「 𝐄𝐌𝐎𝐉𝐈 」	
 ┊ hola ${pushname}
 ┊
 └───────────●
@@ -10018,8 +10018,8 @@ break
 case 'imageeffectmenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
-var unicorn = await getBuffer(picak+'Image Effect Menu')
-await XeonBotInc.send5ButImg(from, `┌────「 IMG EFFECT 」
+var unicorn = await getBuffer(picak+'Image Effect')
+await XeonBotInc.send5ButImg(from, `┌────「 𝐈𝐌𝐆 𝐄𝐅𝐅𝐄𝐂𝐓 」
 ┊ hola ${pushname}
 ┊
 └───────────●
@@ -10046,8 +10046,8 @@ break
 case 'animemenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
-var unicorn = await getBuffer(picak+'Anime Menu')
-await XeonBotInc.send5ButImg(from, `┌────「 ANIME 」	
+var unicorn = await getBuffer(picak+'Anime')
+await XeonBotInc.send5ButImg(from, `┌────「 𝐀𝐍𝐈𝐌𝐄 」	
 ┊ hola ${pushname}
 ┊
 └───────────●
@@ -10107,8 +10107,8 @@ break
 case 'stickermenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
-var unicorn = await getBuffer(picak+'Sticker Menu')
-await XeonBotInc.send5ButImg(from, `┌────「 STICKER 」
+var unicorn = await getBuffer(picak+'Sticker')
+await XeonBotInc.send5ButImg(from, `┌────「 𝐒𝐓𝐈𝐂𝐊𝐄𝐑 」
 ┊ hola ${pushname}
 ┊
 └───────────●
@@ -10128,8 +10128,8 @@ break
 case 'animestickermenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
-var unicorn = await getBuffer(picak+'Anime Sticker Menu')
-await XeonBotInc.send5ButImg(from, `┌────「 ANIME STICKER 」
+var unicorn = await getBuffer(picak+'Anime Sticker')
+await XeonBotInc.send5ButImg(from, `┌────「 𝐀𝐍𝐈𝐌𝐄 𝐒𝐓𝐈𝐂𝐊𝐄𝐑 」
 ┊ hola ${pushname}
 ┊
 └───────────●
@@ -10171,8 +10171,8 @@ break
 case 'nsfwmenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
-var unicorn = await getBuffer(picak+'Nsfw Menu')
-await XeonBotInc.send5ButImg(from, `┌────「 NSFW 」
+var unicorn = await getBuffer(picak+'Nsfw')
+await XeonBotInc.send5ButImg(from, `┌────「 𝐍𝐒𝐅𝐖 」
 ┊ hola ${pushname}
 ┊
 └───────────●
@@ -10212,8 +10212,8 @@ break
 case 'funmenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
-var unicorn = await getBuffer(picak+'Fun Menu')
-await XeonBotInc.send5ButImg(from, `┌────「 Fun 」
+var unicorn = await getBuffer(picak+'Divertido')
+await XeonBotInc.send5ButImg(from, `┌────「 𝐅𝐔𝐍 」
 ┊ hola ${pushname}
 ┊
 └───────────●
@@ -10290,8 +10290,8 @@ break
 case 'soundmenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
-var unicorn = await getBuffer(picak+'Sound Menu')
-await XeonBotInc.send5ButImg(from, `┌────「 sonidos 」
+var unicorn = await getBuffer(picak+'Audios')
+await XeonBotInc.send5ButImg(from, `┌────「 𝐀𝐔𝐃𝐈𝐎𝐒 」
 ┊ hola ${pushname}
 ┊
 └───────────●
@@ -10382,8 +10382,8 @@ break
 case 'gamemenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
-var unicorn = await getBuffer(picak+'Game Menu')
-await XeonBotInc.send5ButImg(from, `┌────「 GAME 」
+var unicorn = await getBuffer(picak+'Juegos')
+await XeonBotInc.send5ButImg(from, `┌────「 𝐉𝐔𝐄𝐆𝐎𝐒 」
 ┊ hola ${pushname}
 ┊
 └───────────●
@@ -10403,8 +10403,8 @@ break
 case 'anonymousmenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
-var unicorn = await getBuffer(picak+'Anonymous Menu')
-await XeonBotInc.send5ButImg(from, `┌────「 ANONYMOUS 」	
+var unicorn = await getBuffer(picak+'Anonymous')
+await XeonBotInc.send5ButImg(from, `┌────「 𝐀𝐍𝐎𝐍𝐘𝐌𝐎𝐔𝐒 」	
 ┊ hola ${pushname}
 ┊
 └───────────●
@@ -10421,8 +10421,8 @@ break
 case 'toolmenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
-var unicorn = await getBuffer(picak+'Tool Menu')
-await XeonBotInc.send5ButImg(from, `┌────「 TOOL 」	
+var unicorn = await getBuffer(picak+'Tool')
+await XeonBotInc.send5ButImg(from, `┌────「 𝐓𝐎𝐎𝐋 」	
 ┊🔸 ${prefix}translate [text]
 ┊🔸 ${prefix}fliptext [text]
 ┊🔸 ${prefix}toletter [number]
@@ -10431,8 +10431,8 @@ break
 case 'databasemenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
-var unicorn = await getBuffer(picak+'Database Menu')
-await XeonBotInc.send5ButImg(from, `┌────「 DATABASE 」	
+var unicorn = await getBuffer(picak+'Base De Datos')
+await XeonBotInc.send5ButImg(from, `┌────「 𝐁𝐀𝐒𝐄 𝐃𝐄 𝐃𝐀𝐓𝐎𝐒 」	
 ┊🔸 ${prefix}setcmd
 ┊🔸 ${prefix}listcmd
 ┊🔸 ${prefix}delcmd
@@ -10483,8 +10483,8 @@ break
 case 'othermenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
-var unicorn = await getBuffer(picak+'Other Menu')
-await XeonBotInc.send5ButImg(from, `┌────「 OTHER 」
+var unicorn = await getBuffer(picak+'Imformacion')
+await XeonBotInc.send5ButImg(from, `┌────「 𝐈𝐌𝐅𝐎𝐑𝐌𝐀𝐂𝐈𝐎𝐍 」
 ┊ hola ${pushname}
 ┊
 └───────────●
