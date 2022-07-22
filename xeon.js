@@ -71,7 +71,7 @@ async function startXeonBotInc() {
     const callerId = json.content[0].attrs['call-creator']
     if (json.content[0].tag == 'offer') {
     let xeonfek = await XeonBotInc.sendContact(callerId, global.owner)
-    XeonBotInc.sendMessage(callerId, { text: `no llama!\n'usted seda bloqueado automáticamente por llamar al bot!\nmanda ayuda al owner`}, { quoted : xeonfek })
+    XeonBotInc.sendMessage(callerId, { text: `𝘕𝘰 𝘭𝘭𝘢𝘮𝘢𝘳 𝘢𝘭 𝘣𝘰𝘵!\n𝘴𝘦𝘳𝘢𝘴 𝘣𝘭𝘰𝘲𝘶𝘦𝘢𝘥𝘰 𝘩𝘢𝘣𝘭𝘢 𝘤𝘰𝘯 𝘦𝘭 𝘤𝘳𝘦𝘢𝘥𝘰𝘳 𝘱𝘢𝘳𝘢 𝘵𝘶 𝘥𝘦𝘴𝘣𝘢𝘯𝘦𝘰!`}, { quoted : xeonfek })
     await sleep(8000)
     await XeonBotInc.updateBlockStatus(callerId, "block")
     }
@@ -153,8 +153,8 @@ XeonLft = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeUR
                 if (anu.action == 'add') {
                 const xeonbuffer = await getBuffer(ppuser)
                 let xeonName = num
-                const xtime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
-	            const xdate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
+                const xtime = moment.tz('America/Los_Angeles').format('HH:mm:ss')
+	            const xdate = moment.tz('America/Los_Angeles').format('DD/MM/YYYY')
 	            const xmembers = metadata.participants.length
                 let unicorndoc = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "916909137213-1604595598@g.us"}, "message": {orderMessage: {itemCount: 9999999,status: 200, thumbnail: XeonWlcm, surface: 200, message: `${metadata.subject}`, orderTitle: 'xeon', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
                 xeonbody = `┌─❖
@@ -192,8 +192,8 @@ mediaUrl: `${websitex}`
 XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
                 } else if (anu.action == 'remove') {
                 	const xeonbuffer = await getBuffer(ppuser)
-                    const xeontime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
-	                const xeondate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
+                    const xeontime = moment.tz('America/Los_Angeles').format('HH:mm:ss')
+	                const xeondate = moment.tz('America/Los_Angeles').format('DD/MM/YYYY')
                 	let xeonName = num
                     const xeonmembers = metadata.participants.length
                     let unicorndoc = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "916909137213-1604595598@g.us"}, "message": {orderMessage: {itemCount: 9999999,status: 200, thumbnail: xeonbuffer, surface: 200, message: `${metadata.subject}`, orderTitle: 'xeon', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
