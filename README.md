@@ -68,8 +68,6 @@ https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest
 https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 ```
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/DGXeon/CheemsBot-MD4/)
-
 ## `Clone Repo & Instalación`
 ```bash
 git clone https://github.com/elrebelde21/pruebabot
