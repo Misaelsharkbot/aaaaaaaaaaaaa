@@ -13,7 +13,7 @@
 <a href="http://wa.me/56977774748" target="blank"><img src="https://img.shields.io/badge/Creador-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
 <a href="http://wa.me/34623442554" target="blank"><img src="https://img.shields.io/badge/NeKosmic_NK-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
 <a href="http://wa.me/51935116539" target="blank"><img src="https://img.shields.io/badge/Misael-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
-  <a href="http://wa.me/5218992059110" target="blank"><img src="https://img.shields.io/badge/Tío Carlos-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
+<a href="http://wa.me/5218992059110" target="blank"><img src="https://img.shields.io/badge/Tío Carlos-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
 
 > NO BOT
   
@@ -75,7 +75,7 @@ cd pruebabot
 
 npm start
 ```
-## `𝙰𝚌𝚝𝚒𝚟𝚊 𝚎𝚕 𝚝𝚎𝚛𝚖𝚞𝚡
+## 𝙰𝚌𝚝𝚒𝚟𝚊 𝚎𝚕 𝚝𝚎𝚛𝚖𝚞𝚡
 ```bash
 apt update
 apt upgrade
