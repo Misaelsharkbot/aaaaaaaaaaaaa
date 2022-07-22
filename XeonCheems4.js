@@ -2069,7 +2069,7 @@ case 'dare':
     "Toma un libro al azar y lee una página en voz alta en vn y envíalo aquí",
     "Abre la puerta de tu casa y aúlla como un lobo durante 10 segundos",
     "Tómate una selfie vergonzosa y pégala en tu foto de perfil",
-    “Que el grupo elija una palabra y una canción conocida. Tienes que cantar esa canción y enviarla en nota de voz”,
+    "Que el grupo elija una palabra y una canción conocida. Tienes que cantar esa canción y enviarla en nota de voz",
     "Camina sobre tus codos y rodillas todo el tiempo que puedas",
     "cantar himno nacional en nota de voz",
     "Breakdance durante 30 segundos en el salón😂",
