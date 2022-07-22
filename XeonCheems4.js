@@ -1930,26 +1930,26 @@ if (isBanChat) return reply(mess.banChat)
 					const sange = sangeh[Math.floor(Math.random() * sangeh.length)]
 XeonBotInc.sendMessage(from, { text: `*${command}*\n\nName : ${q}\nAnswer : *${sange}%*` }, { quoted: m })
 					break
-                    case 'stupid':
-      case 'foolish':
-      case 'smart':
-      case 'idiot':
+                    case 'estupido':
+      case 'necio':
+      case 'necia':
+      case 'idiota':
       case 'gay':
-      case 'lesbi':
-      case 'bastard':
-      case 'stubble':
-      case 'dog':
-      case 'fuck':
-      case 'ape':
+      case 'lesbiana':
+      case 'bastardo':
+      case 'bastarda':
+      case 'perro':
+      case 'Mierda':
+      case 'mono':
       case 'noob':
-      case 'great':
+      case 'estupendo':
       case 'horny':
-      case 'wibu':
-      case 'asshole':
-      case 'handsome':
-      case 'beautiful':
-      case 'cute':
-      case 'kind':
+      case 'estupenda':
+      case 'bonito':
+      case 'bonita':
+      case 'hermoso':
+      case 'hermosa':
+      case 'elegante':
       case 'ugly':
       case 'pretty':
       case 'lesbian':
@@ -2020,7 +2020,7 @@ XeonBotInc.sendMessage(from, { text: `*${command}*\n\nName : ${q}\nAnswer : *${s
             let member = participants.map(u => u.id)
             let me = m.sender
             let jodoh = member[Math.floor(Math.random() * member.length)]
-            let jawab = `El mas *${command}* Aquí está @${jodoh.split('@')[0]}`
+            let jawab = `El mas *${command}* del grupo es @${jodoh.split('@')[0]}`
             let ments = [me, jodoh]
             let buttons = [
                         { buttonId: '👀', buttonText: { displayText: '👀😂' }, type: 1 }
