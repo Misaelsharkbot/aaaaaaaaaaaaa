@@ -1,4 +1,4 @@
-# `👑BOT en desarrollo👑`
+# `👑 𝙱𝙾𝚃 𝙴𝙽 𝙳𝙴𝚂𝙰𝚁𝚁𝙾𝙻𝙻𝙾 👑`
 <p align="center"> 
   <a href="https://github.com/NeKosmic-NK"><img src="http://readme-typing-svg.herokuapp.com?font=mono&size=17&duration=4000&color=F7B11B&center=falso&vCenter=falso&lines=PRUEBA-BOT-MD++%F0%9F%92%96;Gracias+por+visitar+este+repositorio.+%F0%9F%92%96" height="90px"
 </p>
