@@ -2028,7 +2028,7 @@ XeonBotInc.sendMessage(from, { text: `*${command}*\n\nName : ${q}\nAnswer : *${s
                     await XeonBotInc.sendButtonText(m.chat, buttons, jawab, botname, m, {mentions: ments})
             }
             break
-case 'dare':
+case 'reto':
                    if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
               const dare =[
@@ -2119,7 +2119,7 @@ case 'dare':
               XeonBotInc.sendMessage(from, { image: buffer, caption: '𝘏𝘢𝘴 𝘦𝘴𝘤𝘰𝘨𝘪𝘥𝘰 *𝘙𝘌𝘛𝘖*\n'+ xeondare }, {quoted:m})
               break
                             break
-       case 'truth':
+       case 'verdad':
        if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
               const truth =[
