@@ -2115,8 +2115,8 @@ case 'dare':
      "envíe palabras abusivas en cualquier grupo, excepto en este grupo, y envíe una prueba de captura de pantalla aquí"
 ]
               const xeondare = dare[Math.floor(Math.random() * dare.length)]
-              buffer = await getBuffer(`https://i.ibb.co/305yt26/bf84f20635dedd5dde31e7e5b6983ae9.jpg`)
-              XeonBotInc.sendMessage(from, { image: buffer, caption: '_You choose DARE_\n'+ xeondare }, {quoted:m})
+              buffer = await getBuffer(`https://i.ibb.co/gzfDZLv/unnamed.jpg`)
+              XeonBotInc.sendMessage(from, { image: buffer, caption: '𝘏𝘢𝘴 𝘦𝘴𝘤𝘰𝘨𝘪𝘥𝘰 *𝘙𝘌𝘛𝘖*\n'+ xeondare }, {quoted:m})
               break
                             break
        case 'truth':
@@ -2214,8 +2214,8 @@ case 'dare':
     "¿Juegas pubg, si luego envías tu número de identificación?"
 ]
               const xeontruth = truth[Math.floor(Math.random() * truth.length)]
-              buffer = await getBuffer(`https://i.ibb.co/305yt26/bf84f20635dedd5dde31e7e5b6983ae9.jpg`)
-              XeonBotInc.sendMessage(from, { image: buffer, caption: '_You choose TRUTH_\n'+ xeontruth }, {quoted:m})
+              buffer = await getBuffer(`https://i.ibb.co/gzfDZLv/unnamed.jpg`)
+              XeonBotInc.sendMessage(from, { image: buffer, caption: '𝘏𝘢𝘴 𝘦𝘴𝘤𝘰𝘨𝘪𝘥𝘰 *𝘝𝘌𝘙𝘋𝘈𝘋*\n'+ xeontruth }, {quoted:m})
               break
 case 'when':
 if (isBan) return reply(mess.ban)	 			
