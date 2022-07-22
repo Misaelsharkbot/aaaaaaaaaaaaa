@@ -43,22 +43,25 @@
  
    -----
    
-## clona el reposito aqui 👇
+## 𝙲𝚕𝚘𝚗𝚊 𝚎𝚕 𝚛𝚎𝚙𝚘𝚜𝚒𝚝𝚘 𝚊𝚚𝚞𝚒 👇
 
-- FORK THE REPOSITORY [Here](https://github.com/DGXeon/CheemsBot-MD4/fork)
+- [aqui](https://github.com/DGXeon/CheemsBot-MD4/fork)
 
-## `QR Session`
+## `𝚀𝚁 𝚜𝚎𝚜𝚜𝚒𝚘𝚗`
 [![Cheems Bot](https://repl.it/badge/github/quiec/whatsasena)](https://replit.com/@DGXeon/Cheems-Bot-Multi-Device-Qr-Code-Generator?output%20only=1&lite=1#index.js)
 
-## `SETTINGS`
+## `𝙰𝚓𝚞𝚜𝚝𝚎`
 
-- CHANGE OWNER NUMBER VCARD [Here](https://github.com/DGXeon/CheemsBot-MD4/blob/master/settings.js#L58)
-- CHANGE OWNER NUMBER MENU [Here](https://github.com/DGXeon/CheemsBot-MD4/blob/master/settings.js#L65)
-- CHANGE OWNER NUMBER TAG [Here](https://github.com/DGXeon/CheemsBot-MD4/blob/master/settings.js#L66)
-- CHANGE OWNER NAME [Here](https://github.com/DGXeon/CheemsBot-MD4/blob/master/settings.js#L59)
-- CHANGE BOT NAME [Here](https://github.com/DGXeon/CheemsBot-MD4/blob/master/settings.js#L67)
+- CAMBIAR NÚMERO DE PROPIETARIO [aqui](https://github.com/DGXeon/CheemsBot-MD4/blob/master/settings.js#L58)
+- CAMBIAR NOMBRE DE PROPIETARIO [aqui](https://github.com/DGXeon/CheemsBot-MD4/blob/master/settings.js#L59)
+- CAMBIAR NOMBRE DEL BOT [aqui](https://github.com/DGXeon/CheemsBot-MD4/blob/master/settings.js#L67)
 
-## ` BUILDPACKS`
+## 𝙰𝚌𝚝𝚒𝚟𝚊 𝚎𝚕 𝚑𝚎𝚛𝚘𝚔𝚞
+𝙿𝚊𝚛𝚊 𝚞𝚜𝚞𝚊𝚛𝚒𝚘 𝚍𝚎 𝚑𝚎𝚛𝚘𝚔𝚞
+
+ [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/DGXeon/CheemsBot-MD4/)
+
+` 𝙰𝚗̃𝚊𝚍𝚊 𝚕𝚘 𝚜𝚒𝚐𝚞𝚎𝚗𝚝𝚎 𝚊𝚕 𝙱𝚞𝚒𝚕𝚍𝚙𝚊𝚌𝚔:`
 
 ```
 https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest
@@ -67,21 +70,14 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/DGXeon/CheemsBot-MD4/)
 
-# Install Manually 👇
-## `Requirements`
-* [Node.js](https://nodejs.org/en/)
-* [Git](https://git-scm.com/downloads)
-* [FFmpeg](https://github.com/BtbN/FFmpeg-Builds/releases/download/autobuild-2020-12-08-13-03/ffmpeg-n4.3.1-26-gca55240b8c-win64-gpl-4.3.zip)
-* [Libwebp](https://developers.google.com/speed/webp/download)
-* Any text editor
-## `Clone Repo & Installation dependencies`
+## `Clone Repo & Instalación`
 ```bash
 git clone https://github.com/elrebelde21/pruebabot
 cd pruebabot
 
 npm start
 ```
-## `For Termux/Ssh/Ubuntu`
+## `𝙰𝚌𝚝𝚒𝚟𝚊 𝚎𝚕 𝚝𝚎𝚛𝚖𝚞𝚡
 ```bash
 apt update
 apt upgrade
@@ -97,19 +93,8 @@ git clone https://github.com/elrebelde21/pruebabot
 cd pruebabot
 npm start
 ```
-## `For VPS`
-```bash
-apt install nodejs 
-apt install git 
-apt apt install ffmpeg 
-apt apt install libwebp 
-apt apt install imagrmagick
-apt install bash
-git clone https://github.com/elrebelde21/pruebabot
-cd pruebabot 
-npm start
-```
-## `For 24/7 Activation (Termux)`
+
+## `𝙿𝚊𝚛𝚊 𝚊𝚌𝚝𝚒𝚟𝚊 𝟸𝟺/𝟽 (𝚝𝚎𝚛𝚖𝚞𝚡)`
 ```bash
 npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs
 ```
